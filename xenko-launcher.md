@@ -11,8 +11,9 @@ Using the Xenko launcher, you can:
 * access Xenko support and Xenko communities
 * open your recent Xenko projects quickly
 * access Xenko documentation and news streams
+
    ![Launcher interface](media/LauncherInterface.png)
-   
+
    *Xenko launcher interface*
 	
 ## Start Xenko Studio
@@ -42,8 +43,8 @@ Xenko launcher can manage different versions of the Xenko SDK. When the Xenko in
 * Click the release notes button to view the release notes of a Xenko version.
 * Click the download and install button to download and install the required Xenko version. 
 * Click the uninstall button to uninstall a Xenko version.
+
    ![Switch or Update Versions](media/SwitchUpdateVersions.png)
-   
    *Various versions of Xenko*
 	
 ## Visual Studio plugin
@@ -52,10 +53,10 @@ After you download your first Xenko SDK, the launcher prompts to install the Vis
 
 This plugin provides:
 
-*	syntax highlighting
-*	live-code-analysis with validation
-*	error-checking
-*	navigation (jump to definition)
+* syntax highlighting
+* live-code-analysis with validation
+* error-checking
+* navigation (jump to definition)
 
 If you manually remove the Visual Studio plugin, you can always install it again with the **Reinstall** button.
 
@@ -74,8 +75,8 @@ From this section, you can:
 * [chat](https://gitter.im/SiliconStudio/xenko) with Xenko engineers
 * check Xenko [roadmap](https://trello.com/b/FwbjOjjB/xenko-roadmap) on Trello
 * connect with Xenko on [Twitter](https://twitter.com/xenko3d), [Facebook](https://www.facebook.com/xenko3d), and [Reddit](https://www.reddit.com/r/xenko) 
+
    ![Interacting Options](media/InteractingOptions.png)
-   
    *Interacting options*
 
 ## Projects
