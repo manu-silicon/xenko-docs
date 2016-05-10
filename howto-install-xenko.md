@@ -56,7 +56,7 @@ Now, as the Xenko setup file is downloaded, let us install the application.
     
 	_Select installation folder_
 
-    The **Folder** text box displays the default path to install Xenko. To change the path, click![media/Installer5.png](media/InstallXenko_Browse.png)and select the required path.
+    The **Folder** text box displays the default path to install Xenko. To change the path, click ![media/Installer5.png](media/InstallXenko_Browse.png) and select the required path.
 
  5. Click **Next**.
 
@@ -68,13 +68,13 @@ Now, as the Xenko setup file is downloaded, let us install the application.
 
  6. Select the required options to create shortcuts, and then click **Next**.
 
-    The **Ready to install** window opens.
+    The **Ready to Install** window opens.
 
     ![media/Installer7.png](media/InstallXenko_ReadytoInstall.png) 
     
 	_Ready to Install window_
 
- 7. Click **Install**.
+ 7. Click **INSTALL**.
 
     The **Installation window** opens.
 
