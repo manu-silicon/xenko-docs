@@ -12,10 +12,11 @@ Using the Xenko launcher, you can:
 * open your recent Xenko projects quickly
 * access Xenko documentation and news streams
 
+
    ![Launcher interface](media/LauncherInterface.png)
 
    *Xenko launcher interface*
-
+	
 ## Start Xenko Studio
 
 You can start Xenko Studio from this section.
@@ -23,13 +24,13 @@ You can start Xenko Studio from this section.
 If the version installed is not the latest version, the Start button displays the text “Install latest version”. Click the **Install latest version** button to get the latest version installed.
 
    ![Install Latest Version Button](media/InstallLatestVersionButton.png)
-
+   
    *Install latest version button of Xenko launcher*
-
+	
 On the Start button, you can see the currently installed version of Xenko Studio. Click the Start button to start the displayed version of Xenko.
 
    ![Launcher Start Button](media/LauncherStartButton.png)
-
+   
    *Start button of Xenko launcher*
 
 >**Note:** If you select the **Close the launcher after starting Xenko** check box, the launcher closes after starting Xenko Studio. If you prefer keeping the launcher open, you can clear the **Close the launcher after starting Xenko** check box.
@@ -41,13 +42,12 @@ Xenko launcher can manage different versions of the Xenko SDK. When the Xenko in
 >**Note:** While updating an existing version, you can choose either a major or a minor version to install. However, once that version is installed, you cannot revert to a bug fix version.
 
 * Click the release notes button to view the release notes of a Xenko version.
-* Click the download and install button to download and install the required Xenko version.
+* Click the download and install button to download and install the required Xenko version. 
 * Click the uninstall button to uninstall a Xenko version.
 
    ![Switch or Update Versions](media/SwitchUpdateVersions.png)
-
    *Various versions of Xenko*
-
+	
 ## Visual Studio plugin
 
 After you download your first Xenko SDK, the launcher prompts to install the Visual Studio plugin. Installing this plugin is not mandatory. However, we highly recommend you to install it. Thanks to this plugin, you can edit your shaders directly from Visual Studio.
@@ -62,9 +62,9 @@ This plugin provides:
 If you manually remove the Visual Studio plugin, you can always install it again with the **Reinstall** button.
 
    ![Visual Studio Plugin](media/VisualStudioPlugin.png)
-
+   
    *Visual Studio plugin*
-
+	
 ## Xenko support
 
 From this section, you can:
@@ -75,10 +75,9 @@ From this section, you can:
 * discuss Xenko on the Xenko [forum](http://forums.xenko.com/)
 * [chat](https://gitter.im/SiliconStudio/xenko) with Xenko engineers
 * check Xenko [roadmap](https://trello.com/b/FwbjOjjB/xenko-roadmap) on Trello
-* connect with Xenko on [Twitter](https://twitter.com/xenko3d), [Facebook](https://www.facebook.com/xenko3d), and [Reddit](https://www.reddit.com/r/xenko)
+* connect with Xenko on [Twitter](https://twitter.com/xenko3d), [Facebook](https://www.facebook.com/xenko3d), and [Reddit](https://www.reddit.com/r/xenko) 
 
    ![Interacting Options](media/InteractingOptions.png)
-
    *Interacting options*
 
 ## Projects
@@ -86,9 +85,9 @@ From this section, you can:
 You can open your recent Xenko projects from this section just by a click. Your latest Xenko project is always displayed at the top of this list.
 
    ![Projects Section](media/ProjectsSection.png)
-
+   
    *Projects section*
-
+	
 ## Getting started and news
 
 You can access various getting started topics of Xenko Manual and news streams related to Xenko from this section.
@@ -96,7 +95,7 @@ You can access various getting started topics of Xenko Manual and news streams r
 Click the **Getting started** tab to view the help topics. To view news streams, click the **News** tab.
 
    ![Getting Started and News Section](media/GettingStartedNews.png)
-
+   
    *Getting started and News section*
 
 We have discussed what all you can do with Xenko launcher. Let us know about [Xenko Studio](http://doc.xenko.com/latest/manual/xenko-studio/index.html).
