@@ -12,10 +12,9 @@ Using the Xenko launcher, you can:
 * open your recent Xenko projects quickly
 * access Xenko documentation and news streams
 
-
    ![Launcher interface](media/LauncherInterface.png)
 
-   *Xenko launcher interface*
+   __Xenko launcher interface__
 	
 ## Start Xenko Studio
 
@@ -25,7 +24,7 @@ If the version installed is not the latest version, the Start button displays th
 
    ![Install Latest Version Button](media/InstallLatestVersionButton.png)
    
-   *Install latest version button of Xenko launcher*
+   __Install latest version button of Xenko launcher__
 	
 On the Start button, you can see the currently installed version of Xenko Studio. Click the Start button to start the displayed version of Xenko.
 
