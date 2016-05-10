@@ -14,7 +14,7 @@ Using the Xenko launcher, you can:
 
    ![Launcher interface](media/LauncherInterface.png)
 
-   __Xenko launcher interface__
+   *Xenko launcher interface*
 	
 ## Start Xenko Studio
 
@@ -24,7 +24,7 @@ If the version installed is not the latest version, the Start button displays th
 
    ![Install Latest Version Button](media/InstallLatestVersionButton.png)
    
-   __Install latest version button of Xenko launcher__
+   *Install latest version button of Xenko launcher*
 	
 On the Start button, you can see the currently installed version of Xenko Studio. Click the Start button to start the displayed version of Xenko.
 
@@ -45,6 +45,7 @@ Xenko launcher can manage different versions of the Xenko SDK. When the Xenko in
 * Click the uninstall button to uninstall a Xenko version.
 
    ![Switch or Update Versions](media/SwitchUpdateVersions.png)
+
    *Various versions of Xenko*
 	
 ## Visual Studio plugin
@@ -77,6 +78,7 @@ From this section, you can:
 * connect with Xenko on [Twitter](https://twitter.com/xenko3d), [Facebook](https://www.facebook.com/xenko3d), and [Reddit](https://www.reddit.com/r/xenko) 
 
    ![Interacting Options](media/InteractingOptions.png)
+
    *Interacting options*
 
 ## Projects
