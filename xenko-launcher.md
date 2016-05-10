@@ -4,13 +4,13 @@ After you install Xenko, the launcher starts immediately. In this topic, let us 
 
 Using the Xenko launcher, you can:
 
-*  start Xenko Studio
-*  manage different versions of Xenko Studio
-*  view release notes of Xenko Studio
-*  reinstall the Microsoft Visual Studio plugin
-*  access Xenko support and Xenko communities
-*  open your recent Xenko projects quickly
-*  access Xenko documentation and news streams
+* start Xenko Studio
+* manage different versions of Xenko Studio
+* view release notes of Xenko Studio
+* reinstall the Microsoft Visual Studio plugin
+* access Xenko support and Xenko communities
+* open your recent Xenko projects quickly
+* access Xenko documentation and news streams
 
    ![Launcher interface](media/LauncherInterface.png)
 
@@ -40,9 +40,9 @@ Xenko launcher can manage different versions of the Xenko SDK. When the Xenko in
 
 >**Note:** While updating an existing version, you can choose either a major or a minor version to install. However, once that version is installed, you cannot revert to a bug fix version.
 
-*  Click the release notes button to view the release notes of a Xenko version.
-*  Click the download and install button to download and install the required Xenko version.
-*  Click the uninstall button to uninstall a Xenko version.
+* Click the release notes button to view the release notes of a Xenko version.
+* Click the download and install button to download and install the required Xenko version.
+* Click the uninstall button to uninstall a Xenko version.
 
    ![Switch or Update Versions](media/SwitchUpdateVersions.png)
 
@@ -69,13 +69,13 @@ If you manually remove the Visual Studio plugin, you can always install it again
 
 From this section, you can:
 
-*  report an [issue](https://github.com/SiliconStudio/xenko/issues/) about Xenko to Silicon Studio on GitHub
-*  ask a [question](http://answers.xenko.com/index.html) about Xenko on AnswerHub
-*  explore the [source code](https://github.com/SiliconStudio/xenko/) of Xenko Game Engine on GitHub
-*  discuss Xenko on the Xenko [forum](http://forums.xenko.com/)
-*  [chat](https://gitter.im/SiliconStudio/xenko) with Xenko engineers
-*  check Xenko [roadmap](https://trello.com/b/FwbjOjjB/xenko-roadmap) on Trello
-*  connect with Xenko on [Twitter](https://twitter.com/xenko3d), [Facebook](https://www.facebook.com/xenko3d), and [Reddit](https://www.reddit.com/r/xenko)
+* report an [issue](https://github.com/SiliconStudio/xenko/issues/) about Xenko to Silicon Studio on GitHub
+* ask a [question](http://answers.xenko.com/index.html) about Xenko on AnswerHub
+* explore the [source code](https://github.com/SiliconStudio/xenko/) of Xenko Game Engine on GitHub
+* discuss Xenko on the Xenko [forum](http://forums.xenko.com/)
+* [chat](https://gitter.im/SiliconStudio/xenko) with Xenko engineers
+* check Xenko [roadmap](https://trello.com/b/FwbjOjjB/xenko-roadmap) on Trello
+* connect with Xenko on [Twitter](https://twitter.com/xenko3d), [Facebook](https://www.facebook.com/xenko3d), and [Reddit](https://www.reddit.com/r/xenko)
 
    ![Interacting Options](media/InteractingOptions.png)
 
