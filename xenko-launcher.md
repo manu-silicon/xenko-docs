@@ -41,7 +41,7 @@ Xenko launcher can manage different versions of the Xenko SDK. When the Xenko in
 >**Note:** While updating an existing version, you can choose either a major or a minor version to install. However, once that version is installed, you cannot revert to a bug fix version.
 
 * Click the release notes button to view the release notes of a Xenko version.
-* Click the download and install button to download and install the required Xenko version.
+* Click the download and install button to install the required Xenko version.
 * Click the uninstall button to uninstall a Xenko version.
 
    ![Switch or Update Versions](media/SwitchUpdateVersions.png)
