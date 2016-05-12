@@ -23,6 +23,7 @@ This topic provides steps to create an empty project.
  1.	On the Xenko Launcher, click the Start button.
  
     ![media/CreateProject_StartButton.png](media/CreateProject_StartButton.png)
+
     _Start button of Xenko Launcher_
 
 	The **New/open project** window opens.CreateProject_NewWindow
@@ -35,6 +36,7 @@ This topic provides steps to create an empty project.
     The **Create a new game** window opens. This window helps to configure the new project.
 	
     ![media/CreateProject_CreateNewGame.png](media/CreateProject_CreateNewGame.png) 
+
     _Create a new game_
 	
  3.	Type a name to your new game in the **Namespace** box.
