@@ -1,16 +1,15 @@
 # Xenko launcher
 
-After you install Xenko, the launcher starts immediately. In this topic, let us discuss what all you can do with the Xenko launcher.
+The Xenko launcher helps you manage various versions of Xenko and start the Xenko Studio.
 
 Using the Xenko launcher, you can:
 
-* start Xenko Studio
-* manage different versions of Xenko Studio
-* view release notes of Xenko Studio
-* reinstall the Microsoft Visual Studio plugin
-* access Xenko support and Xenko communities
-* open your recent Xenko projects quickly
-* access Xenko documentation and news streams
+* Start Xenko Studio
+* Manage different versions of Xenko Studio
+* Reinstall the Microsoft Visual Studio plugin
+* Open your recent Xenko projects quickly
+* Access Xenko documentation and news streams
+* Interact with the Xenko communities
 
    ![Launcher interface](media/LauncherInterface.png)
 
@@ -20,28 +19,32 @@ Using the Xenko launcher, you can:
 
 You can start Xenko Studio from this section.
 
-If the version installed is not the latest version, the Start button displays the text “Install latest version”. Click the **Install latest version** button to get the latest version installed.
-
-   ![Install Latest Version Button](media/InstallLatestVersionButton.png)
-   
-   *Install latest version button of Xenko launcher*
-	
 On the Start button, you can see the currently installed version of Xenko Studio. Click the Start button to start the displayed version of Xenko.
 
    ![Launcher Start Button](media/LauncherStartButton.png)
    
    *Start button of Xenko launcher*
 
->**Note:** If you select the **Close the launcher after starting Xenko** check box, the launcher closes after starting Xenko Studio. If you prefer keeping the launcher open, you can clear the **Close the launcher after starting Xenko** check box.
+>**Note:** Select the **Close the launcher after starting Xenko** check box to close the launcher after the Xenko Studio starts.
 
 ## Switch or update versions
 
-Xenko launcher can manage different versions of the Xenko SDK. When the Xenko installation is over, click the required version button and then click the Start button. Xenko Studio is launched and you are ready to create your first game!
+Xenko launcher can manage different versions of the Xenko SDK.
 
->**Note:** While updating an existing version, you can choose either a major or a minor version to install. However, once that version is installed, you cannot revert to a bug fix version.
+There are the following versions of Xenko:
+
+* **Major** – It is a major update to the software.
+* **Minor** – It is a small update to the software.
+* **Bug fix** – It is any change made to the software, for example, bug fixes and small updates.
+
+Xenko launcher allows you to choose a version because breaking changes happen between two versions and you may not necessarily want to update your game.
+
+>**Note:** While updating an existing version, you can choose between a major (1.x.x) and a minor (1.1.x) version to install. However, you cannot revert to a bug fix version (1.1.1) once installed.
+
+When the Xenko installation is over, click the required version button and then click the Start button. The Xenko Studio is launched.
 
 * Click the release notes button to view the release notes of a Xenko version.
-* Click the download and install button to download and install the required Xenko version. 
+* Click the download and install button to install the required Xenko version. 
 * Click the uninstall button to uninstall a Xenko version.
 
    ![Switch or Update Versions](media/SwitchUpdateVersions.png)
@@ -65,23 +68,7 @@ If you manually remove the Visual Studio plugin, you can always install it again
    
    *Visual Studio plugin*
 	
-## Xenko support
-
-From this section, you can:
-
-* report an [issue](https://github.com/SiliconStudio/xenko/issues/) about Xenko to Silicon Studio on GitHub
-* ask a [question](http://answers.xenko.com/index.html) about Xenko on AnswerHub
-* explore the [source code](https://github.com/SiliconStudio/xenko/) of Xenko Game Engine on GitHub
-* discuss Xenko on the Xenko [forum](http://forums.xenko.com/)
-* [chat](https://gitter.im/SiliconStudio/xenko) with Xenko engineers
-* check Xenko [roadmap](https://trello.com/b/FwbjOjjB/xenko-roadmap) on Trello
-* connect with Xenko on [Twitter](https://twitter.com/xenko3d), [Facebook](https://www.facebook.com/xenko3d), and [Reddit](https://www.reddit.com/r/xenko) 
-
-   ![Interacting Options](media/InteractingOptions.png)
-
-   *Interacting options*
-
-## Projects
+## Recent projects
 
 You can open your recent Xenko projects from this section just by a click. Your latest Xenko project is always displayed at the top of this list.
 
@@ -99,4 +86,10 @@ Click the **Getting started** tab to view the help topics. To view news streams,
    
    *Getting started and News section*
 
-We have discussed what all you can do with Xenko launcher. Let us know about [Xenko Studio](http://doc.xenko.com/latest/manual/xenko-studio/index.html).
+## Xenko community
+
+From this section, you can interact with the Xenko community.
+
+   ![Interacting Options](media/InteractingOptions.png)
+
+   *Interacting options*
