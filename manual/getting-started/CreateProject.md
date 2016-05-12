@@ -1,6 +1,6 @@
 # Create a project
 
-We have discussed various features of the [Xenko Launcher](xenko-launcher/index.md). Now let us create a new project. Xenko provides two ways to create a project: you can create an empty project, or you can start with an existing sample.
+We have discussed various features of the [Xenko Launcher](http://doc.xenko.com/latest/manual/xenko-launcher/index.html). Now let us create a new project. Xenko provides two ways to create a project: you can create an empty project, or you can start with an existing sample.
 
 While creating a new project you can also:
 
