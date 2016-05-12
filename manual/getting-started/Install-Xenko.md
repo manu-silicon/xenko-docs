@@ -1,7 +1,7 @@
 
 # Install Xenko
 
-This topic provides the steps to download and install Xenko Gaming Engine on your system. 
+This topic provides the steps to download and install Xenko Game Engine on your system. 
 
 ## Download 
 
