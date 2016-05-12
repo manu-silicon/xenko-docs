@@ -1,92 +1,95 @@
-# Xenko Launcher
+# Xenko launcher
 
-The **launcher** is the starting point of Xenko, with it you can:
+The Xenko launcher helps you manage various versions of Xenko and start the Xenko Studio.
 
-- **Start Xenko Studio**
-- **Open recent projects**
-- **Manage the different versions** of Xenko
-- Visualize the **release notes** of each versions
-- Access **tutorials and news** about Xenko
-- Find ways to **interact with the community**
+Using the Xenko launcher, you can:
 
-# Overview
+* Start Xenko Studio
+* Manage different versions of Xenko Studio
+* Reinstall the Microsoft Visual Studio plugin
+* Open your recent Xenko projects quickly
+* Access Xenko documentation and news streams
+* Interact with the Xenko communities
 
-![media/xenko-launcher-1.png](media/xenko-launcher-1.png) 
+   ![Launcher interface](media/LauncherInterface.png)
 
-- A: Start the game studio
-- B: Manage versions of xenko
-- C: Interact with the community
-- D: Open recent projects
-- E: Last tutorials and news
+   *Xenko launcher interface*
+	
+## Start Xenko Studio
 
-# 
+You can start Xenko Studio from this section.
 
-# Start the studio
+On the Start button, you can see the currently installed version of Xenko Studio. Click the Start button to start the displayed version of Xenko.
 
-To start the displayed version of Xenko just click on the button.
+   ![Launcher Start Button](media/LauncherStartButton.png)
+   
+   *Start button of Xenko launcher*
 
-To change the version of xenko to launch, click on the version you want in the list (B)
+>**Note:** Select the **Close the launcher after starting Xenko** check box to close the launcher after the Xenko Studio starts.
 
-![media/xenko-launcher-2.png](media/xenko-launcher-2.png)        **→**       ![media/xenko-launcher-3.png](media/xenko-launcher-3.png) 
+## Switch or update versions
 
-Note: by default the launcher closes after starting the game studio. If you prefer keeping the launcher open you can uncheck the corresponding checkbox 
+Xenko launcher can manage different versions of the Xenko SDK.
 
-# 
+There are the following versions of Xenko:
 
-# Manage versions
+* **Major** – It is a major update to the software.
+* **Minor** – It is a small update to the software.
+* **Bug fix** – It is any change made to the software, for example, bug fixes and small updates.
 
-Using the launcher you can **install**, **uninstall** **a version** as well as view a **specific version release notes**.
+Xenko launcher allows you to choose a version because breaking changes happen between two versions and you may not necessarily want to update your game.
 
-![media/xenko-launcher-4.png](media/xenko-launcher-4.png) 
+>**Note:** While updating an existing version, you can choose between a major (1.x.x) and a minor (1.1.x) version to install. However, you cannot revert to a bug fix version (1.1.1) once installed.
 
-- A: Display the release notes of the specific version
-- B: The name of the version
-- C: Download and install the version
-- D: Uninstall and remove the version
-- E: Reinstall the Visual Studio package
+When the Xenko installation is over, click the required version button and then click the Start button. The Xenko Studio is launched.
 
-Note: The Visual Studio plugin is automatically installed when installing Xenko. But in the case the user removed it by mistake it can be reinstalled at any times from the launcher.
+* Click the release notes button to view the release notes of a Xenko version.
+* Click the download and install button to install the required Xenko version. 
+* Click the uninstall button to uninstall a Xenko version.
 
-# 
+   ![Switch or Update Versions](media/SwitchUpdateVersions.png)
 
-# Interact with the community
+   *Various versions of Xenko*
+	
+## Visual Studio plugin
 
-The launcher proposes quick access to all the different ways to interact with us and the community.
+After you download your first Xenko SDK, the launcher prompts to install the Visual Studio plugin. Installing this plugin is not mandatory. However, we highly recommend you to install it. Thanks to this plugin, you can edit your shaders directly from Visual Studio.
 
-![media/xenko-launcher-5.png](media/xenko-launcher-5.png) 
+This plugin provides:
 
-Depending on your problem or need, click on the most adapted link and wait to be redirected.
+* syntax highlighting
+* live-code-analysis with validation
+* error-checking
+* navigation (jump to definition)
 
-# 
+If you manually remove the Visual Studio plugin, you can always install it again with the **Reinstall** button.
 
-# Recent projects
+   ![Visual Studio Plugin](media/VisualStudioPlugin.png)
+   
+   *Visual Studio plugin*
+	
+## Recent projects
 
-The launch contains the list of all our recent projects.
+You can open your recent Xenko projects from this section just by a click. Your latest Xenko project is always displayed at the top of this list.
 
-The open a recent project simply click on the item.
+   ![Projects Section](media/ProjectsSection.png)
+   
+   *Projects section*
+	
+## Getting started and news
 
-Note that launcher is capable of determining the adequate version of Xenko, so you don't need to manually switch the version of Xenko before starting your project.
+You can access various getting started topics of Xenko Manual and news streams related to Xenko from this section.
 
-![media/xenko-launcher-6.png](media/xenko-launcher-6.png) 
+Click the **Getting started** tab to view the help topics. To view news streams, click the **News** tab.
 
-- A: The name of the project
-- B: Update the project and open it with last version of Xenko.
-- C: The absolute path to the project
-- D: The version of Xenko of the project
+   ![Getting Started and News Section](media/GettingStartedNews.png)
+   
+   *Getting started and News section*
 
-# 
+## Xenko community
 
-# Tutorials and news streams
+From this section, you can interact with the Xenko community.
 
-The launcher also proposes you direct links to tutorials and news. 
+   ![Interacting Options](media/InteractingOptions.png)
 
-Just click on the item to be automatically redirected to the website.
-
-![media/xenko-launcher-7.png](media/xenko-launcher-7.png) 
-
-- A: Switch to the getting started stream
-- B: Switch to the news stream
-- C: The list of items
-
- 
-
+   *Interacting options*
