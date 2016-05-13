@@ -6,7 +6,7 @@ Xenko provides two ways to create a project: you can create an empty project, or
 
  * Use a new game template.
  * Create a New [Package](http://doc.xenko.com/latest/manual/getting-started/game-project-hierarchy.html).
- * Explore the Samples provided for graphics, audio, physics, UI, and so on along with sample games
+ * Explore the Samples provided for graphics, audio, physics, UI, and so on along with sample games.
 
 
 Following are the steps to create an empty project.
@@ -26,15 +26,16 @@ Following are the steps to create an empty project.
 	
  2. Select **New Game** and click **Select**.
  
-    The **Create a new game** window opens. This window helps to configure the new project.
+    The **Create a new game...** window opens. This window helps you configure the new project.
 	
     ![media/CreateProject_CreateNewGame.png](media/CreateProject_CreateNewGame.png) 
 
     _Create a new game window_
 	
- 3.	Type a name to your new game in the **Namespace** box.
+ 3.	Type a name for your new game in the **Namespace** box.
  4.	Select the required platform from the **Platforms** section.
         If your system does not have a particular platform requirement, a message is displayed.
+
         >**Note:** Xamarin license is required to build your game on iOS or Android.
 
  5.	Select the required configurations for graphic API and colors from the **Rendering** section.
