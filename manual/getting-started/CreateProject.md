@@ -35,8 +35,7 @@ Following are the steps to create an empty project.
  3.	Type a name for your new game in the **Namespace** box.
  4.	Select the required platform from the **Platforms** section.
         If your system does not have a particular platform requirement, a message is displayed.
-
-        > **Note:** Xamarin license is required to build your game on iOS or Android.
+    >**Note:** Xamarin license is required to build your game on iOS or Android.
 
  5.	Select the required configurations for graphic API and colors from the **Rendering** section.
  
