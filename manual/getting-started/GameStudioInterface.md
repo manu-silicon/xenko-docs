@@ -12,6 +12,7 @@ The main interface of the **Game Studio** includes the following sections:
 The **Solution explorer** section displays the [hierarchy](http://doc.xenko.com/latest/manual/getting-started/game-project-hierarchy.html) of your game. 
  
 ![media/GameStudioInterface_SolutionExplorer.png](media/GameStudioInterface_SolutionExplorer.png)
+
 _Solution explorer window_
 
 The **Solution explorer** helps you to create or add packages to your solution, or add C# projects to your packages. You can also modify the hierarchy by creating folders, renaming or deleting objects, and so on.
@@ -33,6 +34,7 @@ Different elements of **Solution explorer**:
 The **Asset view** section displays all the assets of the game.
 
 ![media/GameStudioInterface_AssetView.png](media/GameStudioInterface_AssetView.png)
+
 _Asset view window_
 
 The **Asset view**:
@@ -44,6 +46,7 @@ The **Asset view**:
 The **Property grid** section displays the properties of the selected asset.
 
 ![media/GameStudioInterface_PropertyGrid.png](media/GameStudioInterface_PropertyGrid.png)
+
 _Property grid window_
 
 If multiple assets are selected, common properties are displayed. Behavior of an asset or the way the asset is imported can be changed by changing the values in the **Property grid**.
@@ -53,6 +56,7 @@ If multiple assets are selected, common properties are displayed. Behavior of an
 The **Asset preview** section displays the asset as the way it is rendered in the game.
 
 ![media/GameStudioInterface_AssetPreview.png](media/GameStudioInterface_AssetPreview.png)
+
 _Asset preview window_
 
 The preview depends on the type of the asset selected. For a model, all the materials of the model are displayed, and the camera can rotate around the model. For animations and sounds, it is possible to playback and to seek with a timeline. You can only preview the asset, but you cannot edit an asset.
@@ -95,6 +99,7 @@ The **Output** section displays two tabs:
 The **Action history** section displays the history of all the actions done.
  
 ![media/GameStudioInterface_ActionHistory.png](media/GameStudioInterface_ActionHistory.png)
+
 _Action history window_
 
 It displays a list of all actions that are done in a game. There is an option to undo or redo any of the actions.
