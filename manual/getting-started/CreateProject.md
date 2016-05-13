@@ -54,4 +54,4 @@ Following are the steps to create an empty project.
   
   >**Note:** All the parameters that you created can be modified later using Xenko Game Studio.
 
-Now, your project is ready. We can add some components to the game using the [Xenko Game Studio](game-studio-interface.md).
+Now, your project is ready. you can now add some components to the game using the [Xenko Game Studio](game-studio-interface.md).
