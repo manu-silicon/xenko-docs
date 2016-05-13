@@ -38,9 +38,9 @@ Following are the steps to create an empty project.
 
  5.	Select the required configurations for graphic API and colors from the **Rendering** section.
  
-        5.a **Graphic API**: Select the required graphic API from the list. The graphic features are dependent on the API that you select. For advanced graphic features, select latest graphic API.
+       5.a **Graphic API**: Select the required graphic API from the list. The graphic features are dependent on the API that you select. For advanced graphic features, select latest graphic API.
 
-	    >**Note:** Some of the graphic cards do not support the latest APIs. For mobile devices, restrict the selection to profile 9_1 or profile 10_0 respectively.
+       >**Note:** Some of the graphic cards do not support the latest APIs. For mobile devices, restrict the selection to profile 9_1 or profile 10_0 respectively.
 	
 	5.b **Colors**: Select the required range of colors for your game. You can choose either LDR or HDR. LDR (Low Dynamic Range) ranges from 0 to 1. HDR (High Dynamic Range) allows any random float values. HDR gives more possibilities but it is complex.
  
