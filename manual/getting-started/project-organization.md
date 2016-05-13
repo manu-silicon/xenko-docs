@@ -6,8 +6,8 @@ A Xenko project is organized into various parts. Each game is contained in a pac
 
 Thus, following is the hierarchy of game projects in Xenko:
 
-* [Package](manual/engine/package.md) 
-* [Project](manual/engine/project.md)
-* [Solution](manual/engine/solution.md)
-* [Assets](manual/engine/assets.md)
-* [Resources](manual/engine/resources.md)
+* [Package](/manual/engine/package.md) 
+* [Project](/manual/engine/project.md)
+* [Solution](/manual/engine/solution.md)
+* [Assets](/manual/engine/assets.md)
+* [Resources](/manual/engine/resources.md)
