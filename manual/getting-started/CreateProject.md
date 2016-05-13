@@ -16,6 +16,7 @@ Following are the steps to create an empty project.
  1.	On the Xenko Launcher, click the Start button.
  
     ![media/CreateProject_StartButton.png](media/CreateProject_StartButton.png)
+
     _Start button of Xenko launcher_
 
 	The **New/open project** window opens.
