@@ -5,7 +5,7 @@ In this topic, you will learn how to create a new project.
 Xenko provides two ways to create a project: you can create an empty project, or you can start with an existing sample. While creating a new project you can:
 
  * Use a new game template.
- * Create a New [Package](project-organization.md#project).
+ * Create a New [Package](project-organization.md#package).
  * Explore the Samples provided for graphics, audio, physics, UI, and so on along with sample games
 
 
