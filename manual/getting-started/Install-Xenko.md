@@ -5,16 +5,13 @@ This topic provides the steps to download and install Xenko Game Engine on your 
 
 ## Download 
 
-To install Xenko, you must first download the application from the Xenko website.
+To install Xenko, you need to first download the application from the Xenko [website](http://xenko.com/download/).
 
-Xenko website has a [DOWNLOAD](http://xenko.com/download/) page which includes pre-requisites for download, such as platform requirements, system requirements, licensing, and installer details. Click the **DOWNLOAD** button.
-
-The Xenko application setup file gets downloaded.
-
+>**Note:**The download page which includes pre-requisites for download, such as platform requirements, system requirements, licensing, and installer details.
 
 ## Install 
 
-Now, as the Xenko setup file is downloaded, we can install the application.
+Now, as the Xenko setup file is downloaded, you can install the application.
 
 **To install Xenko:**
 
