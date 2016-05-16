@@ -1,37 +1,105 @@
-## Game Studio Interface
+# Game Studio Interface
 
-We discussed on how to create a new project. The new project created is opened in a Game Studio Interface.
+You can open your project in the Game Studio Interface.
 
- * Game Studio Interface can be used for:
- * Creating content for a new game.
- * Adding components like assets, graphics, audio, or animations for a game.
- * Setting properties for each component.
- * Building and executing a game.
+![media/GameStudioInterface_Interface.png](media/GameStudioInterface_Interface.png)
+_Main Interface of Game Studio window_
 
-**Main Interface:**
- [MainInterface] (media/GameStudioInterface_Interface.png)
- _Main Interface_
+The main interface of the **Game Studio** includes the following sections:
 
-The main interface of Game Studio is split into different parts.
+## Solution explorer
 
- 1. Menu bar and tool bar – Menu bar has various menus each one with a specific function.
-     [MainInterface] (media/GameStudioInterface_Menubar.png)
-     _Menubar_
-
-   a. File menu – Helps in creating a new project, opening a project, saving a project, reloading a project, and quit out of Game Studio.
-   b. Edit menu – Helps in doing Undo, redo, delete, and changing settings.
-   c. Project menu – Helps in Building, starting, live scripting a project, creating a sub folder, adding different components to a package, creating and importing assets, deleting an action.
-   d. View menu – Helps in changing the view of Game Studio Interface with switching On/Off various parts of interface.
-   e. Help menu – Helps in connecting online help, and helps in interacting with Xenko community.
-
- 2. Scene settings – Displays all the entities that are added to the game.
-
- 3. Asset view port – Displays the actual view of the scene where assets can be added and arranged as required.
-
- 4. Property grid – Helps in changing the properties of selected asset or scene. If multiple assets are selected, common properties of selected assets are displayed. The selected assets behavior can also be controlled and changed as per the requirement by editing the values in the property grid.
-
- 5. Solution explorer – Displays the project hierarchy of the game.
+The **Solution explorer** section displays the [hierarchy](http://doc.xenko.com/latest/manual/getting-started/game-project-hierarchy.html) of your game. 
  
- 6. Asset view – displays all the assets that are added or imported into the game. Also helps in creating and importing new assets into the game.
+![media/GameStudioInterface_SolutionExplorer.png](media/GameStudioInterface_SolutionExplorer.png)
+
+_Solution explorer window_
+
+The **Solution explorer** helps you to create or add packages to your solution, or add C# projects to your packages. You can also modify the hierarchy by creating folders, renaming or deleting objects, and so on.
+
+The packages in the Solution explorer are divided into two categories:
+ * **Local packages**: Packages that are created by you.
+ * **External packages**: Packages that are downloaded from the Internet.
+ >**Note:** A package file (``.xkpg``) contains single package, whereas a solution file (``.sln``) contains several packages. Each package contains three base elements.
+
+Different elements of **Solution explorer**:
+ * **Assets**: This element contains all the assets of a package. Expand it to see the hierarchy between the assets. Select the **Asset** folder to view all the assets in **Asset view**.
+
+ * **Code**: This element contains all the code libraries, and executables of the package, corresponding to a single file. Set an executable as current project by right-clicking it, which allows you to compile the assets for the related platform and launch the game.
+
+ * **Dependencies**: This element contains all the other external packages that refer to this package. The assets of the external packages are accessible to this package.
+
+## Asset view
+
+The **Asset view** section displays all the assets of the game.
+
+![media/GameStudioInterface_AssetView.png](media/GameStudioInterface_AssetView.png)
+
+_Asset view window_
+
+The **Asset view**:
+ * Displays assets in tile view with thumbnails, or in a more compact grid view.
+ * Provides tools for searching or filtering assets in the toolbar.
+ * Creates new assets or imports assets.
  
- 7. References – displays the references of the assets used in the game. There are two tabs: Referencees and Referencers.
+## Property grid
+The **Property grid** section displays the properties of the selected asset.
+
+![media/GameStudioInterface_PropertyGrid.png](media/GameStudioInterface_PropertyGrid.png)
+
+_Property grid window_
+
+If multiple assets are selected, common properties are displayed. Behavior of an asset or the way the asset is imported can be changed by changing the values in the **Property grid**.
+
+## Asset preview 
+
+The **Asset preview** section displays the asset as the way it is rendered in the game.
+
+![media/GameStudioInterface_AssetPreview.png](media/GameStudioInterface_AssetPreview.png)
+
+_Asset preview window_
+
+The preview depends on the type of the asset selected. For a model, all the materials of the model are displayed, and the camera can rotate around the model. For animations and sounds, it is possible to playback and to seek with a timeline. You can only preview the asset, but you cannot edit an asset.
+
+
+## References
+
+The **References** section displays the references between various assets.
+
+![media/GameStudioInterface_References.png](media/GameStudioInterface_References.png)
+_References_
+
+There are two tabs displayed in the **References** section:
+
+ * **Referencees**: Displays all the assets that are required by the selected asset. For example, if a model is selected, all the materials and textures that are required by that model to render correctly are displayed.
+
+ * **Referencers**: Displays all the assets that require the selected asset. For example, if a texture is selected, all the materials, models, and entities that need this texture are listed.
+
+## Asset error
+
+The **Asset error** section displays warnings or errors for the assets in your project, such as, invalid properties, broken references, and so on. 
+
+![media/GameStudioInterface_AssetError.png](media/GameStudioInterface_AssetError.png)
+_Asset errors window_
+ 
+## Output
+
+The **Output** section displays the output errors or warnings while building a project.
+
+![media/GameStudioInterface_Output.png](media/GameStudioInterface_Output.png)
+_Output window_
+
+The **Output** section displays two tabs:
+
+ * **Build**:  Displays the log and errors that are related to asset and script, while building the project.
+ * **Live-scripting**: This is a special mode where, while running your game, there is a facility to edit the script and it automatically updates the script without relaunching the game.
+
+## Action history
+
+The **Action history** section displays the history of all the actions done.
+ 
+![media/GameStudioInterface_ActionHistory.png](media/GameStudioInterface_ActionHistory.png)
+
+_Action history window_
+
+It displays a list of all actions that are done in a game. There is an option to undo or redo any of the actions.
