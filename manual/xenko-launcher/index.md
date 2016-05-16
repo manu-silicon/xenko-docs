@@ -9,7 +9,7 @@ Using the Xenko launcher, you can also:
 * Access Xenko documentation and news streams
 * Interact with the Xenko communities
 
-   ![Launcher interface](media/LauncherInterface.png)
+   ![Launcher interface](media/xenko-launcher-interface.png)
 
    *Xenko launcher interface*
 	
@@ -17,7 +17,7 @@ Using the Xenko launcher, you can also:
 
 You can start the Xenko Studio by clicking the Start button to start the currently displayed version of Xenko. To change the starting version, click the required version in  the **Version management** section to make that version as your current version. 
 
-   ![Launcher Start Button](media/LauncherStartButton.png)
+   ![Launcher Start Button](media/xenko-launcher-start-button.png)
    
    *Start button of Xenko launcher*
 
@@ -43,7 +43,7 @@ When the Xenko installation is over, click the required version button and then 
 * Click the download and install button to install the required Xenko version. 
 * Click the uninstall button to uninstall a Xenko version.
 
-   ![Switch or Update Versions](media/SwitchUpdateVersions.png)
+   ![Switch or Update Versions](media/xenko-laucher-switch-update-versions.png)
 
    *Various versions of Xenko*
 	
@@ -60,7 +60,7 @@ This plugin provides:
 
 If you manually remove the Visual Studio plugin, you can always install it again with the **Reinstall** button.
 
-   ![Visual Studio Plugin](media/VisualStudioPlugin.png)
+   ![Visual Studio Plugin](media/xenko-laucher-visual-studio-plugin.png)
    
    *Visual Studio plugin*
 	
@@ -68,7 +68,7 @@ If you manually remove the Visual Studio plugin, you can always install it again
 
 You can open your recent Xenko projects from this section just by a click. Your latest Xenko project is always displayed at the top of this list.
 
-   ![Projects Section](media/ProjectsSection.png)
+   ![Projects Section](media/xenko-laucher-recent-projects-section.png)
    
    *Projects section*
 	
@@ -78,7 +78,7 @@ You can access various getting started topics of Xenko Manual and news streams r
 
 Click the **Getting started** tab to view the help topics. To view news streams, click the **News** tab.
 
-   ![Getting Started and News Section](media/GettingStartedNews.png)
+   ![Getting Started and News Section](media/xenko-laucher-getting-started-news.png)
    
    *Getting started and News section*
 
@@ -86,6 +86,6 @@ Click the **Getting started** tab to view the help topics. To view news streams,
 
 From this section, you can interact with the Xenko community.
 
-   ![Interacting Options](media/InteractingOptions.png)
+   ![Interacting Options](media/xenko-launcher-interacting-options.png)
 
    *Interacting options*
