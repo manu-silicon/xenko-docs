@@ -1,5 +1,5 @@
 # [Getting started](getting-started/index.md)
-## [Game project hierarchy](getting-started/game-project-hierarchy.md)
+## [Project organization](getting-started/project-organization.md)
 ## [Game Studio interface](getting-started/GameStudioInterface.md)
 ## [Install Xenko](getting-started/Install-Xenko.md)
 ## [HOWTO: Create and setup new game](getting-started/howto-create-and-setup-new-game.md)
