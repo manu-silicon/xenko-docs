@@ -1,11 +1,9 @@
 # Xenko launcher
 
-The Xenko launcher helps you manage various versions of Xenko and start the Xenko Studio.
+The Xenko launcher helps you manage and start the different versions of Xenko.
 
-Using the Xenko launcher, you can:
+Using the Xenko launcher, you can also:
 
-* Start Xenko Studio
-* Manage different versions of Xenko Studio
 * Reinstall the Microsoft Visual Studio plugin
 * Open your recent Xenko projects quickly
 * Access Xenko documentation and news streams
@@ -17,9 +15,7 @@ Using the Xenko launcher, you can:
 	
 ## Start Xenko Studio
 
-You can start Xenko Studio from this section.
-
-On the Start button, you can see the currently installed version of Xenko Studio. Click the Start button to start the displayed version of Xenko.
+You can start the Xenko Studio by clicking the Start button to start the currently displayed version of Xenko. To change the starting version, click the required version in  the **Version management** section to make that version as your current version. 
 
    ![Launcher Start Button](media/LauncherStartButton.png)
    
@@ -27,19 +23,19 @@ On the Start button, you can see the currently installed version of Xenko Studio
 
 >**Note:** Select the **Close the launcher after starting Xenko** check box to close the launcher after the Xenko Studio starts.
 
-## Switch or update versions
+## Version management
 
-Xenko launcher can manage different versions of the Xenko SDK.
+With  the Xenko launcher, you can manage different versions of the Xenko SDK.
 
-There are the following versions of Xenko:
+There are the following types of versions of Xenko:
 
-* **Major** – It is a major update to the software.
-* **Minor** – It is a small update to the software.
-* **Bug fix** – It is any change made to the software, for example, bug fixes and small updates.
+* **Major:** It is a major update to the software that adds significant changes to the program. In a Major version, the first digit of the version is changed, for example, 1.x.x is changed to 2.x.x.
+* **Minor:** It is a small update to the software that adds minor changes to the program. In a Minor version, the second digit of the version is changed, for example, 1.1.x is changed to 1.2.x.
+* **Bug fix:** It is a change made to the software to fix bugs or problems found in the software. In a Bug fix version, the third digit of the version is changed, for example, 1.1.1 is changed to 1.1.2.
 
-Xenko launcher allows you to choose a version because breaking changes happen between two versions and you may not necessarily want to update your game.
+The launcher allows you to choose the Xenko version because breaking changes may happen between versions and you may not necessarily want to update your game.
 
->**Note:** While updating an existing version, you can choose between a major (1.x.x) and a minor (1.1.x) version to install. However, you cannot revert to a bug fix version (1.1.1) once installed.
+>**Note:** While updating an existing version, you can choose between a major (1.x.x) and a minor (1.1.x) version to install. However, the bug fix version updates cannot be reverted.
 
 When the Xenko installation is over, click the required version button and then click the Start button. The Xenko Studio is launched.
 
