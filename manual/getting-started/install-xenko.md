@@ -1,17 +1,20 @@
 
 # Install Xenko
 
-This topic provides the steps to download and install Xenko Game Engine on your system. 
+This topic provides the steps to download and install Xenko Gaming Engine on your system. 
 
 ## Download 
 
-To install Xenko, you need to first download the application from the Xenko [website](http://xenko.com/download/).
+To install Xenko, you must first download the application from the Xenko website.
 
->**Note:**The download page which includes pre-requisites for download, such as platform requirements, system requirements, licensing, and installer details.
+Xenko website has a [DOWNLOAD](http://xenko.com/download/) page which includes pre-requisites for download, such as platform requirements, system requirements, licensing, and installer details. Click the **DOWNLOAD** button.
+
+The Xenko application setup file gets downloaded.
+
 
 ## Install 
 
-Now, as the Xenko setup file is downloaded, you can install the application.
+Now, as the Xenko setup file is downloaded, we can install the application.
 
 **To install Xenko:**
 
@@ -19,7 +22,7 @@ Now, as the Xenko setup file is downloaded, you can install the application.
     
     The Xenko Setup Wizard opens.
 	
-	![Xenko Setup Wizard](media/InstallXenko_SetupWizard.png) 
+	![Xenko Setup Wizard](media/install-xenko-setup-wizard.png) 
     
 	_Xenko Setup Wizard_
 
@@ -27,7 +30,7 @@ Now, as the Xenko setup file is downloaded, you can install the application.
 
     The **Xenko License Agreement** window opens.
 	
-    ![media/Installer2.png](media/InstallXenko_LicenseAgreement.png)
+    ![media/Installer2.png](media/install-xenko-license-agreement.png)
 	
 	_Xenko License Agreement window_
 
@@ -35,14 +38,14 @@ Now, as the Xenko setup file is downloaded, you can install the application.
 
     The **Xenko installation type** window opens.
 	
-    ![media/Installer3.png](media/InstallXenko_InstallationType.png) 
+    ![media/Installer3.png](media/install-xenko-installation-type.png) 
     
 	_Xenko installation type window_
 
  4. Select the option for the required installation type, and then click **Next**.
     The **Select installation folder** window opens.
 
-    ![media/Installer4.png](media/InstallXenko_SelectInstallationFolder.png)
+    ![media/Installer4.png](media/install-xenko-select-installation-folder.png)
     
 	_Select installation folder_
 
@@ -52,7 +55,7 @@ Now, as the Xenko setup file is downloaded, you can install the application.
 
     The **Create application shortcuts** window opens.
 	
-    ![media/Installer6.png](media/InstallXenko_CreateApplicationShortcuts.png)
+    ![media/Installer6.png](media/install-xenko-create-application-shortcuts.png)
     
 	_Create application shortcuts window_
 
@@ -60,7 +63,7 @@ Now, as the Xenko setup file is downloaded, you can install the application.
 
     The **Ready to Install** window opens.
 
-    ![media/Installer7.png](media/InstallXenko_ReadytoInstall.png) 
+    ![media/Installer7.png](media/install-xenko-ready-to-install.png) 
     
 	_Ready to Install window_
 
@@ -68,7 +71,7 @@ Now, as the Xenko setup file is downloaded, you can install the application.
 
     The **Installation window** opens.
 
-    ![media/Installer8.png](media/InstallXenko_InstallationStatus.png) 
+    ![media/Installer8.png](media/install-xenko-installation-status.png) 
     
 	_Installation status_
 
