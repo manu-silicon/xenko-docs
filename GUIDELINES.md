@@ -497,7 +497,8 @@ As a general rule, order your new pages as follow:
 
 Article files should be organized into folders. As much as possible we will try to respect the
 same hierarchy as the documentation. Files corresponding to section header should be included at the 
-top of the folder having the same name and be named 'index.md'.
+top of the folder having the same name and be named 'index.md'. Folder and file names should be
+composed of only lower case letters, words should be separated by dashes.
 
 Media files (images and videos) referenced in articles should be placed in a dedicated folder
 named 'media' and put next to the referencing articles.
@@ -507,23 +508,24 @@ folder named 'code' and put next to the referencing articles.
 
 Hierarchy example:
 
-> Graphic
+> graphic
 >   - index.md
->   - Overview.md
+>   - overview.md
 >   - media
->     - OverviewImage1.png
->     - OverviewImage2.png
->     - OverviewVideo2.mp4
->   - PostEffects
+>     - overview-image1.png
+>     - overview-image2.png
+>     - overview-video2.mp4
+>   - post-effects
 >     - index.md
 >     - media
->       - posteffectImage1.png
+>       - post-effect-image1.png
 >     - code
->       - posteffectCode.cs
+>       - post-effect-code.cs
 
 ## <a name="FilesName"> Files Name
 
-As much as possible, you should give explicit and human-understandable names to files.
+File names should consist only of lower case letters and dashes to separate the words.
+Also as much as possible, you should give explicit and human-understandable names to files.
 
 Our recommendations are the following:
 - Section Header files should always be named 'index.md'
@@ -533,11 +535,11 @@ Our recommendations are the following:
 Examples:
 > **Appropriate**  
 > index.md  
-> PointLight.md  
-> PointLightDiagram.png  
+> point-light.md  
+> point-light-diagram.png  
 >
 > **Inappropriate**  
-> GraphicsIndex.md  
+> graphics-index.md  
 > PointLightFile1.md  
 > Img20150902.png  
 
