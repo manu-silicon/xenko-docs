@@ -1,7 +1,7 @@
 # [Getting started](getting-started/index.md)
 ## [Game project hierarchy](getting-started/game-project-hierarchy.md)
 ## [Game Studio interface](getting-started/game-studio-interface.md)
-## [Install Xenko](getting-started/Install-Xenko.md)
+## [Install Xenko](getting-started/install-xenko.md)
 ## [HOWTO: Create and setup new game](getting-started/howto-create-and-setup-new-game.md)
 ## [HOWTO: Create or import asset data](getting-started/howto-create-or-import-asset-data.md)
 ## [HOWTO: Setup a basic scene](getting-started/howto-setup-a-basic-scene.md)
