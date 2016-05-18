@@ -4,8 +4,8 @@ The Xenko launcher helps you manage and start the different versions of Xenko.
 
 Using the Xenko launcher, you can also:
 
-* Reinstall the Microsoft Visual Studio plugin
-* Open your recent Xenko projects quickly
+* Reinstall the Xenko Visual Studio plugin
+* Open your recent Xenko projects
 * Access Xenko documentation and news streams
 * Interact with the Xenko communities
 
@@ -35,7 +35,7 @@ There are the following types of versions of Xenko:
 
 The launcher allows you to choose the Xenko version because breaking changes may happen between versions and you may not necessarily want to update your game.
 
->**Note:** While updating an existing version, you can choose between a major (1.x.x) and a minor (1.1.x) version to install. However, the bug fix version updates cannot be reverted.
+>**Note:** The bug fix version updates cannot be reverted.
 
 When the Xenko installation is over, click the required version button and then click the Start button. The Xenko Studio is launched.
 
