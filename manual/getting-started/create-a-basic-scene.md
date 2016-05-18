@@ -21,7 +21,7 @@ For more information on how to navigate in a scene, see [Navigate in a scene](ge
 
 You have added the required entities and components to your scene. Now you can execute your scene.
 
-Click the![media/create-basic-scene-play.png](media/create-basic-scene-play.png)button displayed below the Menu bar or Press **F5**. This action builds the assets and launches your game.
+Click the ![media/create-basic-scene-play.png](media/create-basic-scene-play.png) button displayed below the Menu bar or Press **F5**. This action builds the assets and launches your game.
 
    ![Execute Game](media/create-basic-scene-execute.png) 
    _Executed game scene_
