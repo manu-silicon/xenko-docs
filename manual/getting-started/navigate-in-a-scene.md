@@ -7,9 +7,11 @@ In this topic, we will discuss how to navigate in a scene in the Xenko Studio. X
 To focus on an entity, first you need to select that entity with a mouse-click. Then, press the **F** key.
 
    ![Entity before focus](media/navigate-in-scene-before-focus.png)
+   
    _Entity before focus_
 
    ![Entity after focus](media/navigate-in-scene-after-focus.png)
+   
    _Entity after focus_
 
 ## Move orbital screen
@@ -32,6 +34,7 @@ To move the orbital screen:
 The orbital camera helps you view an entity on the Viewport from various angles. The orbital camera moves only when the **Alt** key is pressed along with the left or middle or right mouse button click.
 
    ![Orbital camera](media/navigate-in-scene-orbital-camera.png)
+   
    _Orbital camera_
 
 ## View entity from various angles
@@ -45,6 +48,7 @@ To view an entity from various angles:
 3. Click the required orientation (**Front**, **Back**, **Top**, **Bottom**, **Left**, **Right**).
 
    ![View an entity](media/navigate-in-scene-projection-orientation.png)
+   
    _Projection and orientation_
 
 >**Note:** A convenient combination to view an entity in different angles is to select the entity, focus with the key **F**, and rotate around with the orbital cam.
@@ -56,9 +60,11 @@ The XYZ axes in the bottom-left corner help you for orientations.
 * **Z-Axis:** Defines the Z-axis orientations
 
    ![XYZ axes](media/navigate-in-scene-axes.png)
+   
    _XYZ axes_
 
 The cube in the top-right corner is helps you easily change between top, left, right, and bottom views.
 
    ![Cube](media/navigate-in-scene-cube.png)
+   
    _Cube_
