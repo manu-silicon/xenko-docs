@@ -15,7 +15,7 @@ Using the Xenko launcher, you can also:
 	
 ## Start Xenko Studio
 
-You can start the Xenko Studio by clicking the Start button to start the currently displayed version of Xenko. To change the starting version, click the required version in  the **Version management** section to make that version as your current version. 
+You can start the Xenko Studio by clicking the Start button to start the currently displayed version of Xenko. To change the starting version, click the required version in  the **Switch/update version** section to make that version as your current version. 
 
    ![Launcher Start Button](media/xenko-launcher-start-button.png)
    
