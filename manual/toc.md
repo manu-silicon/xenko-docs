@@ -6,6 +6,7 @@
 ## [HOWTO: Create or import asset data](getting-started/howto-create-or-import-asset-data.md)
 ## [HOWTO: Setup a basic scene](getting-started/howto-setup-a-basic-scene.md)
 ## [Create a basic scenen](getting-started/create-a-basic-scene-draft.md)
+## [Navigate in a scene](getting-started/navigate-in-a-scene.md)
 ## [Add Elements to Scene](getting-started/add-element-to-scene-draft.md)
 ## [HOWTO: Use scripts](getting-started/howto-use-scripts.md)
 ## [HOWTO: Animate a model](getting-started/howto-animate-a-model.md)
