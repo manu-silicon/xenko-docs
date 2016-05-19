@@ -1,6 +1,6 @@
 # [Getting started](getting-started/index.md)
 ## [Project organization](getting-started/project-organization.md)
-## [Game Studio interface](getting-started/GameStudioInterface.md)
+## [Game Studio interface](getting-started/game-studio-interface.md)
 ## [Install Xenko](getting-started/install-xenko.md)
 ## [Create a Project](getting-started/create-project.md)
 ## [HOWTO: Create or import asset data](getting-started/howto-create-or-import-asset-data.md)
