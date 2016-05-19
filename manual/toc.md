@@ -2,7 +2,7 @@
 ## [Project organization](getting-started/project-organization.md)
 ## [Game Studio interface](getting-started/GameStudioInterface.md)
 ## [Install Xenko](getting-started/install-xenko.md)
-## [Create a Project](getting-started/CreateProject.md)
+## [Create a Project](getting-started/create-project.md)
 ## [HOWTO: Create or import asset data](getting-started/howto-create-or-import-asset-data.md)
 ## [HOWTO: Setup a basic scene](getting-started/howto-setup-a-basic-scene.md)
 ## [Create a basic scenen](getting-started/create-a-basic-scene-draft.md)
