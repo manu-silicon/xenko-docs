@@ -2,7 +2,7 @@
 
 # Introduction
 
-Xenko is providing a *superset* of the [HLSL Shading language](http://msdn.microsoft.com/en-us/library/windows/desktop/bb509561%28v=vs.85%29.aspx) , bringing advanced and higher level language constructions. This language enhances the developer experience while authoring shaders with:
+Xenko is providing a *superset* of the [HLSL Shading language](http://msdn.microsoft.com/en-us/library/windows/desktop/bb509561%28v=vs.85%29.aspx) , bringing advanced and higher level language constructions. This language enhances the developer experience while authoring shaders with:
 
 - **Extensibility** to allow shaders to be extended easily using Object-Oriented-Programming concepts like class, inheritance, composition.
 - **Modularity** to provide a set modular shaders each focusing on a single rendering technique, more easily manageable
@@ -12,7 +12,7 @@ Xenko Shading Language is automatically transformed to an existing shading langu
 
 # Concepts
 
-This part will introduce XKSL, a shading language extending HLSL. Its core concepts are:
+This part will introduce XKSL, a shading language extending HLSL. Its core concepts are:
 
 - [class inheritance](classes-mixins-and-inheritance.md)
 - [composition](composition.md)

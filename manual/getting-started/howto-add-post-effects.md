@@ -14,7 +14,7 @@ This is especially true for the glare effects like bloom, light streaks, lens fl
 
 You can switch the editor preview to HDR by clicking the **Root** of your scene, and in the property grid, change the Rendering Mode from **"Low Dynamic Range"** to **"High Dynamic Range"**.
 
- 
+ 
 
 ![media/editor-hdr2.png](media/editor-hdr2.png) 
 
@@ -34,7 +34,7 @@ In the **Graphics Composition** of **Root**, remove the **Clear RenderFrame** an
 
 ![media/master-norender.png](media/master-norender.png) 
 
- 
+ 
 
 Then let's add a layer where our scene will be rendered.
 
@@ -107,11 +107,11 @@ Color transforms available are:
 - **Tone Mapping:** Re-maps an HDR buffer to a LDR buffer. Several operators are available: not only the traditional *Reinhard,* but also the *Hejl-Dawson* or other filmic operators...
   
   You can also tune here the behavior of the auto-exposure of the scene.
-- **Gamma Correction:** Remaps the range of value of the frame to match the specified gamma value. 
+- **Gamma Correction:** Remaps the range of value of the frame to match the specified gamma value. 
 
 ### Antialiasing
 
 An FXAA filter can be enabled to smooth out the jagged lines appearing on the edges of the meshes rendered in the frame.
 
- 
+ 
 

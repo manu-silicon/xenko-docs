@@ -1,6 +1,6 @@
 # How do I setup a HDR pipeline with posteffects?
 
-Assuming that you are already familiar with the  [Scene Graphics Compositor](../graphics-compositor/index.md), we would like to setup a High Dynamic Range rendering pipeline.
+Assuming that you are already familiar with the  [Scene Graphics Compositor](../graphics-compositor/index.md), we would like to setup a High Dynamic Range rendering pipeline.
 
 The principle of HDR rendering is to render to a scene to a HDR render target and then apply a Tone Mapping to convert HDR to a LDR render target to display it on the screen.
 
@@ -17,7 +17,7 @@ The principle of HDR rendering is to render to a scene to a HDR render target an
 
 We would like to setup the following pipeline:
 
- 
+ 
 
 ![media/how-do-i-setup-a-hdr-pipeline-with-posteffects-3.png](media/how-do-i-setup-a-hdr-pipeline-with-posteffects-3.png) 
 
@@ -66,7 +66,7 @@ Then on the HDR Layer, you can click on the Renderers ![media/add.png](media/add
 
 Now we need to transform the HDR output of the HDR Layer to the renderframe LDR of the Windows output
 
-- Add a **Render Effect** by clicking on the Renderers ![media/add.png](media/add.png)
+- Add a **Render Effect** by clicking on the Renderers ![media/add.png](media/add.png)
 - For the Effect, select "**Post-Processing Effects**"
 
 ![media/how-do-i-setup-a-hdr-pipeline-with-posteffects-11.png](media/how-do-i-setup-a-hdr-pipeline-with-posteffects-11.png) 
@@ -84,11 +84,11 @@ The scene should now look more natural instead of a saturated white:
 
 ![media/how-do-i-setup-a-hdr-pipeline-with-posteffects-2.png](media/how-do-i-setup-a-hdr-pipeline-with-posteffects-2.png) 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 

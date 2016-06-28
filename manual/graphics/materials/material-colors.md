@@ -1,6 +1,6 @@
 # Material Colors
 
-Material can fetch their values using color (rgb) or scalar (single float) value providers. 
+Material can fetch their values using color (rgb) or scalar (single float) value providers. 
 
 The Material System supports several kinds of color/scalar providers:
 
@@ -8,7 +8,7 @@ The Material System supports several kinds of color/scalar providers:
 - **Constant Value**: The color/scalar is provided by a constant value
 - **Binary Operator**: Combines two color/scalar value providers
 - **Shader**: The color/scalar is provided by a ComputeColor shader (this is not yet accessible from the Game Studio). This provider allows to use procedural values.
-- **Vertex Attribute Value** (*coming soon*): The color/sccalar is provided by attributes stored in the mesh
+- **Vertex Attribute Value** (*coming soon*): The color/scalar is provided by attributes stored in the mesh
 
 You can select the provider by clicking on the blue drop-down of a Diffuse Map/Specular Map/Normal Map...etc.:
 
@@ -52,7 +52,7 @@ The color is provided directly as a constant value over the whole material. In c
 
 Perform a binary operation from 2 color/scalar value providers.
 
-`Result = LeftColor  <operator> RightColor`
+`Result = LeftColor  <operator> RightColor`
 
 ![media/material-colors-4.png](media/material-colors-4.png) 
 

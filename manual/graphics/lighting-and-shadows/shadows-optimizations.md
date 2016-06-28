@@ -24,7 +24,7 @@ The size of this region depends on several factors:
   - For the spot light, the lightSize is equal to the projection of the projected sphere at target spot light cone
 - The `ShadowMapBaseSize` equals to `1024` (In 1.1.x-beta, it is currently hardcoded, but it will use a dynamic value based on the shader profile / GPU memory)
 
- 
+ 
 
 The final size of the shadow map is then calculated like this:
 

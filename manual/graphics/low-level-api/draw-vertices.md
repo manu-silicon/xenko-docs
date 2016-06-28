@@ -14,7 +14,7 @@ The engine provides the following set of built-in primitives:
 - Torus
 - Teapot
 
-They are not automatically created along with the @'SiliconStudio.Xenko.Graphics.GraphicsDevice' so they have to be instantiated by the user. This is possible through the @'SiliconStudio.Xenko.Graphics.GeometricPrimitives.GeometricPrimitive' class.
+They are not automatically created along with the @'SiliconStudio.Xenko.Graphics.GraphicsDevice' so they have to be instantiated by the user. This is possible through the @'SiliconStudio.Xenko.Graphics.GeometricPrimitives.GeometricPrimitive' class.
 
 **Code:** Creating and using a primitive
 
@@ -22,9 +22,9 @@ They are not automatically created along with the @'SiliconStudio.Xenko.Graphics
 // creation
 var myCube = GeometricPrimitive.Cube.New(GraphicsDevice);
 var myTorus = GeometricPrimitive.Torus.New(GraphicsDevice);
- 
+ 
 // ...
- 
+ 
 // draw one on screen
 myCube.Draw(CommandList, EffectInstance);
 ```
@@ -44,12 +44,12 @@ Given vertex buffer and declaration, a @'SiliconStudio.Xenko.Graphics.VertexBuff
 
 ```cs
 // Create a vertex layout with position and texture coordinate
-var layout = new VertexDeclaration(VertexElement.Position<Vector3>(), VertexElement.TextureCoordinate<Vector2>()) 
- 
+var layout = new VertexDeclaration(VertexElement.Position<Vector3>(), VertexElement.TextureCoordinate<Vector2>()) 
+ 
 // Create the vertex buffer from an array of vertices
 var vertices = new VertexPositionTexture[vertexCount];
 var vertexBuffer = Buffer.Vertex.New(GraphicsDevice, vertices);
- 
+ 
 // Create a vertex buffer binding
 var vertexBufferBinding = new VertexBufferBinding(vertexBuffer, layout, vertexCount);
 ```
@@ -64,18 +64,18 @@ Afterwards, the vertices are ready to be rendered using @'SiliconStudio.Xenko.Gr
 // Set the pipeline state
 pipelineStateDescription.InputElements = vertexBufferBinding.Layout.CreateInputElements();
 pipelineStateDescription.PrimitiveType = PrimitiveType.TriangleStrip;
- 
+ 
 // Create and set a PipelineState object
 // ...
 
 // Bind the vertex buffer to the pipeline
 commandList.SetVertexBuffers(0, vertexBuffer, 0, vertexBufferBinding.Stride);
- 
+ 
 // Draw the vertices
 commandList.Draw(vertexCount);
 ```
 
-It is also possible to draw indexed geometry. To use an index buffer, first create it similarily to the vertex buffer and bind it to the pipeline.
+It is also possible to draw indexed geometry. To use an index buffer, first create it similarly to the vertex buffer and bind it to the pipeline.
 It can then be used for drawing using @'SiliconStudio.Xenko.Graphics.CommandList.DrawIndexed(System.Int32,System.Int32,System.Int32)'.
 
 **Code:** Drawing indexed vertices
@@ -85,7 +85,7 @@ It can then be used for drawing using @'SiliconStudio.Xenko.Graphics.CommandList
 var indices = new short[indexCount];
 var is32Bits = false;
 var indexBuffer = Buffer.Index.New(GraphicsDevice, indices);
- 
+ 
 // set the VAO
 commandList.SetIndexBuffer(indexBuffer, 0, is32Bits);
 

@@ -30,7 +30,7 @@ It creates star-pattern beams from the light point.
 |                           | *This exact effect was achieved by using 2 light streaks with a phase of 0, enabling anamorphic mode and slightly distorting horizontally the bright pass result.* |
 
 
- 
+ 
 
- 
+ 
 

@@ -1,6 +1,6 @@
 # Render Camera
 
-Render all renderable entity components from the scene. 
+Render all renderable entity components from the scene. 
 
 ![media/render-camera-1.png](media/render-camera-1.png) 
 
@@ -22,7 +22,7 @@ Render all renderable entity components from the scene. 
 | Viewport in % | If set to **true**, the **Viewport** is interpreted in percentage, otherwise in absolute.                                 |
 
 
- 
+ 
 
- 
+ 
 

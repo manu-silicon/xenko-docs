@@ -1,6 +1,6 @@
 # HOWTO: Animate a model
 
-Now that you know how to make and use **scripts** lets see how you can use them to easily **animate your models** !
+Now that you know how to make and use **scripts** lets see how you can use them to easily **animate your models** !
 
 # Setup the animation
 
@@ -30,7 +30,7 @@ Finally repeat the process until you have added all the animations that you want
 
 ![media/howto-animate-a-model-5.png](media/howto-animate-a-model-5.png) 
 
- 
+ 
 
 ### Important Notice:
 
@@ -40,17 +40,17 @@ For that, select your model asset in the asset view and check that the nodes in 
 
 ![media/howto-animate-a-model-6.png](media/howto-animate-a-model-6.png) 
 
-If model nodes are not checked, the build system considers that the node information is not needed for the model and merges all the sub-meshes for performances reasons. In this case, animations cannot be properly applied and will be buggy or completely ignored.
+If model nodes are not checked, the build system considers that the node information is not needed for the model and merges all the sub-meshes for performances reasons. In this case, animations cannot be properly applied and will be buggy or completely ignored.
 
 # Play the animation
 
-Now that we have the entity animations properly setup, we can **play them on run-time**.
+Now that we have the entity animations properly setup, we can **play them on run-time**.
 
-For that, the easiest way to do is to use **scripts**. 
+For that, the easiest way to do is to use **scripts**. 
 
 First, **assign a script to the entity** containing the animation component.
 
-Then, inside the script, retrieve a reference to the component and **call either the @'SiliconStudio.Xenko.Engine.AnimationComponent.Play' or @'SiliconStudio.Xenko.Engine.AnimationComponent.Crossfade' functions**.
+Then, inside the script, retrieve a reference to the component and **call either the @'SiliconStudio.Xenko.Engine.AnimationComponent.Play' or @'SiliconStudio.Xenko.Engine.AnimationComponent.Crossfade' functions**.
 
 The **@'SiliconStudio.Xenko.Engine.AnimationComponent.Play'** function starts playing the new animation without performing any transitions. It is generally used to play the first animation.
 
@@ -73,7 +73,7 @@ public class AnimationScript : SyncScript
     public override void Start()
     {
         base.Start();
- 
+ 
 		// Start the default animation here
         currentAnimation = DefaultAnimation;
         Entity.Get<AnimationComponent>().Play(currentAnimation);

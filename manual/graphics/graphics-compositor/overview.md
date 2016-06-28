@@ -5,11 +5,11 @@
 With the graphics compositor you can:
 
 - Render one or multiple scene using
-  - one or multiple cameras camera 
+  - one or multiple cameras camera 
   - filtering entities in the scene
   - to one or multiple render targets with a different viewports
 - Render a child scene (another "game part" or "scene layer") within another scene
-- Render a scene with a camera to a render target that will be used as the input texture of a Material/Effect in a scene (e.g  render the rearview mirror point-of-view to a texture, and display it at the rear-view mirror place)
+- Render a scene with a camera to a render target that will be used as the input texture of a Material/Effect in a scene (e.g  render the rearview mirror point-of-view to a texture, and display it at the rear-view mirror place)
 - Easily mix rendering mode (Forward, Forward+/Deferred - in a future release -...etc), at the same time in the same graphics composition
 - Easily mix HDR and LDR rendering
 - Apply Image/PostProcessing Effects on a render target, select before/after the rendering of a camera.
@@ -20,7 +20,7 @@ The graphics compositor is accessible by clicking on the scene root object and t
 
 ![media/graphics-compositor-overview-2.png](media/graphics-compositor-overview-2.png) 
 
- 
+ 
 
 > **Note**
 > 

@@ -20,7 +20,7 @@ Properties that defines a spot light:
 
 ![media/SpotLightProperties.png](media/SpotLightProperties.png) 
 
- 
+ 
 
 | Property            | Description                                                                                                                                                           |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -35,10 +35,10 @@ Properties that defines a spot light:
 | Filter              | Filtering allows to produce **soft shadows** instead of **hard shadows**. Currently, the implemented technique is PCF (Percentage Closer Filtering)                   |
 |                     |                                                                                                                                                                       |
 |                     | *Note: Other techniques will be added*                                                                                                                                |
-| Size                | The size of the shadow map texture. Values are **extra large**, **large**, **medium**, **small** and **extra small**.                                                 |
+| Size                | The size of the shadow map texture. Values are **extra large**, **large**, **medium**, **small** and **extra small**.                                                 |
 |                     | See [shadow map atlas size calculation](shadows-optimizations.md) for details.                                                                                        |
 |                     |                                                                                                                                                                       |
-|                     |  For a spot light, this value is by default **medium**, as a spot light has usually a medium visual impact.                                                           |
+|                     |  For a spot light, this value is by default **medium**, as a spot light has usually a medium visual impact.                                                           |
 | Bias Parameters     | These parameters are used to avoid some artifacts of the shadow map technique                                                                                         |
 | Depth Bias          | The amount of depth to add to the sampling depth to avoid the phenomenon of shadow acne.                                                                              |
 | Normal Offset Scale | A factor multiplied by the depth bias toward the normal                                                                                                               |
@@ -48,7 +48,7 @@ Properties that defines a spot light:
 | Culling Mask        | Defines which entity groups are affected by this light. By default, all groups are affected.                                                                          |
 
 
- 
+ 
 
- 
+ 
 

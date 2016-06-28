@@ -1,6 +1,6 @@
 # Composition
 
-In addition to the inheritance system, XKSL introduces the concept of composition. A composition simply is a member whose type is another XKSL class. It is defined the same way as variables.
+In addition to the inheritance system, XKSL introduces the concept of composition. A composition simply is a member whose type is another XKSL class. It is defined the same way as variables.
 
 You can compose with an instance of the desired class or an instance of class that inherits from the desired one.
 
@@ -14,17 +14,17 @@ class CompositionBase
 		return float4(0.0);
 	}
 };
- 
+ 
 class CompositionClassA : CompositionBase
 {
 	float4 myColor;
- 
+ 
 	override float4 Compute()
 	{
 		return myColor;
 	}
 };
- 
+ 
 class CompositionClassB : CompositionBase
 {
 	float4 myColor;
@@ -34,12 +34,12 @@ class CompositionClassB : CompositionBase
 		return 0.5 * myColor;
 	}
 };
- 
+ 
 class BaseClass
 {
 	CompositionBase Comp0;
 	CompositionBase Comp1;
- 
+ 
 	float4 GetColor()
 	{
 		return Comp0.Compute() + Comp1.Compute();
@@ -58,7 +58,7 @@ If you want to access the root compilation context, you can use the following fo
 class CompositionClassC : CompositionBase
 {
 	BaseClass rootShader = stage;
- 
+ 
 	float4 GetColor()
 	{
 		return rootShader.GetColor();
@@ -81,12 +81,12 @@ class BaseClassArray
 	float4 GetColor()
 	{
 		float4 resultColor = float4(0.0);
- 
+ 
 		foreach (var comp in Comps)
 		{
 			resultColor += comp.Compute();
 		}
- 
+ 
 		return resultColor;
 	}
 };
@@ -105,13 +105,13 @@ class BaseClass
 	stage float BaseStageValue;
 	float NonStageValue;
 };
- 
+ 
 class TestClass : BaseClass
 {
 	BaseClass comp0;
 	BaseClass comp1;
 };
- 
+ 
 // resulting class (representation)
 class TestClass
 {
@@ -123,7 +123,7 @@ class TestClass
 ```
 
 
-**Code:** Stage member bahavior
+**Code:** Stage member behavior
 
 ```cs
 class BaseClass
@@ -186,32 +186,32 @@ class BaseClass
 	{
 		return 1.0;
 	}
- 
+ 
 	stage float BaseStageMethodNotCloned()
 	{
 		return 1.0;
 	}
 };
- 
+ 
 class CompClass : BaseClass
 {
 	override clone float BaseStageMethod()
 	{
 		return 1.0 + base.BaseStageMethod();
 	}
- 
+ 
 	override float BaseStageMethodNotCloned()
 	{
 		return 1.0f + base.BaseStageMethodNotCloned();
 	}
 };
- 
+ 
 class TestClass : BaseClass
 {
 	CompClass comp0;
 	CompClass comp1;
 };
- 
+ 
 // resulting class (representation)
 class TestClass
 {
@@ -220,23 +220,23 @@ class TestClass
 	{
 		return 1.0;
 	}
- 
+ 
 	float comp0_BaseStageMethod()
 	{
 		return 1.0 + base_BaseStageMethod();
 	}
- 
+ 
 	float BaseStageMethod() // in fact comp1_BaseStageMethod
 	{
 		return 1.0 + comp0_BaseStageMethod; // 3.0f
 	}
- 
+ 
 	// not cloned method
 	float base_BaseStageMethodNotCloned()
 	{
 		return 1.0f;
 	}
- 
+ 
 	float BaseStageMethodNotCloned()
 	{
 		return 1.0f + base_BaseStageMethodNotCloned(); // 2.0f
@@ -247,5 +247,5 @@ class TestClass
 
 This behavior is useful when you want to repeat a simple function but with different parameters (like adding color on top of another).
 
- 
+ 
 

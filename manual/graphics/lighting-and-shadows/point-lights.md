@@ -14,7 +14,7 @@ Once selected, the gizmo of the point light displays its sphere influence:
 
 ![media/PointLightSelected.png](media/PointLightSelected.png) 
 
- 
+ 
 
 > **Note**
 > 
@@ -26,7 +26,7 @@ Properties that defines a point light:
 
 ![media/PointLightProperties.png](media/PointLightProperties.png) 
 
- 
+ 
 
 | Property            | Description                                                                                                                                         |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,10 +39,10 @@ Properties that defines a point light:
 | Filter              | Filtering allows to produce **soft shadows** instead of **hard shadows**. Currently, the implemented technique is PCF (Percentage Closer Filtering) |
 |                     |                                                                                                                                                     |
 |                     | *Note: Other techniques will be added*                                                                                                              |
-| Size                | The size of the shadow map texture. Values are **extra large**, **large**, **medium**, **small** and **extra small**.                               |
+| Size                | The size of the shadow map texture. Values are **extra large**, **large**, **medium**, **small** and **extra small**.                               |
 |                     | See [shadow map atlas size calculation](shadows-optimizations.md) for details.                                                                      |
 |                     |                                                                                                                                                     |
-|                     |  *For a point light, this value is by default to **small**.*                                                                                        |
+|                     |  *For a point light, this value is by default to **small**.*                                                                                        |
 | Bias Parameters     | These parameters are used to avoid some artifacts of the shadow map technique                                                                       |
 | Depth Bias          | The amount of depth to add to the sampling depth to avoid the phenomenon of shadow acne.                                                            |
 | Normal Offset Scale | A factor multiplied by the depth bias toward the normal                                                                                             |
@@ -52,11 +52,11 @@ Properties that defines a point light:
 | Culling Mask        | Defines which entity groups are affected by this light. By default, all groups are affected.                                                        |
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 

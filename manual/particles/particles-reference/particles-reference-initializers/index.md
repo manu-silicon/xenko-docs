@@ -4,7 +4,7 @@
 
 The initializers manage the initial values for all particle fields when they first spawn. They have no function on particles which have been spawned on previous frames.
 
-Note! Some updaters act as post-updaters, changing the particle's value at the *end* of the frame. They will effectively overwrite any initial values set by a similar initializer. Such is the case with all animations. They operate on the particle's lifetime and a color animation updater will overwirte any initial values from a color initializer.
+Note! Some updaters act as post-updaters, changing the particle's value at the *end* of the frame. They will effectively overwrite any initial values set by a similar initializer. Such is the case with all animations. They operate on the particle's lifetime and a color animation updater will overwrite any initial values from a color initializer.
 
 Similarly, initializers which operate on the same field are exclusive and only the bottom one will have any effect, since they are executed in order. For example if you assign two color initializer, only the second one will have any effect.
 
@@ -36,11 +36,10 @@ Particles are spawned in an axis-aligned bounding box, defined by its left lower
 
 | Property                    | Description                                                                                             |
 |-----------------------------|---------------------------------------------------------------------------------------------------------|
-| Seed offset                 | This is used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example. Make them different to force the position to be unique and independant from other fields.               |
+| Seed offset                 | This is used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example. Make them different to force the position to be unique and independent from other fields.               |
 | Position min                | Left lower back corner for the box.                                                                     |
 | Position max                | Right upper front corner for the box.                                                                   |
 
-<br>
 This image shows the bounding box where particles initially appear for this emitter. In addition to the corners (-1, 0.8, -1) ~ (1, 1, 1), the box is further rotated by 45 degrees as seen from the offset rotation.
 
 ![media/particles-reference-initializers-3.png](media/particles-reference-initializers-3.png) 
@@ -98,7 +97,7 @@ Initial color sets the particle's initial color at spawn time. It goes into the 
 
 ## Initial 3D Orientation
 
-Initial 3D orientation sets the orientation for 3d aware particles when they first spawn. The editable fields use euclidian rotation which is packed into a quaternion orientation by the engine. The interpolated value is on the shortest path  between the two orientations, rather than interpolating each value separately.
+Initial 3D orientation sets the orientation for 3d aware particles when they first spawn. The editable fields use euclidean rotation which is packed into a quaternion orientation by the engine. The interpolated value is on the shortest path  between the two orientations, rather than interpolating each value separately.
 
 ![media/particles-reference-initializers-8.png](media/particles-reference-initializers-8.png) 
 

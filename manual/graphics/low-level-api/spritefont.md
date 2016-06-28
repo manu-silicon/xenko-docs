@@ -1,6 +1,6 @@
 # SpriteFont
 
-the @'SiliconStudio.Xenko.Graphics.SpriteFont' class offers an convenient way to draw text. It works with the @'SiliconStudio.Xenko.Graphics.SpriteBatch' class.
+the @'SiliconStudio.Xenko.Graphics.SpriteFont' class offers an convenient way to draw text. It works with the @'SiliconStudio.Xenko.Graphics.SpriteBatch' class.
 
 # Loading a SpriteFont
 
@@ -15,7 +15,7 @@ var myFont = Content.Load<SpriteFont>("MyFont");
 
 # Writing text on screen
 
-Once the font is loaded, the user can display any text on screen with a @'SiliconStudio.Xenko.Graphics.SpriteBatch'. To learn more about the SpriteBatch, read the [related documentation page](spritebatch.md). The @'SiliconStudio.Xenko.Graphics.SpriteBatch.DrawString' method performs the draw.
+Once the font is loaded, the user can display any text on screen with a @'SiliconStudio.Xenko.Graphics.SpriteBatch'. To learn more about the SpriteBatch, read the [related documentation page](spritebatch.md). The @'SiliconStudio.Xenko.Graphics.SpriteBatch.DrawString' method performs the draw.
 
 **Code:** Write text
 
@@ -25,10 +25,10 @@ var spriteBatch = new SpriteBatch(GraphicsDevice);
 
 // do not forget the begin
 spriteBatch.Begin(GraphicsContext);
- 
+ 
 // draw the text "Helloworld!" in red from the center of the screen
 spriteBatch.DrawString(myFont, "Helloworld!", new Vector2(0.5, 0.5), Color.Red);
- 
+ 
 // do not forget the end
 spriteBatch.End();
 ```

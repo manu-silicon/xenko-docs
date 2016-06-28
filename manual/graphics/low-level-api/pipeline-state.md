@@ -18,7 +18,7 @@ They are then bound using a @'SiliconStudio.Xenko.Graphics.CommandList'.
 // Creating pipeline state object
 var pipelineStateDescription = new PipelineStateDescription();
 var pipelineState = PipelineState.New(GraphicsDevice, ref pipelineStateDescription);
- 
+ 
 // Applying the state to the pipeline
 CommandList.SetPipelineState(pipelineState);
 ```
@@ -34,14 +34,14 @@ var mutablePipelineState = new MutablePipelineState();
 // Setting values and rebuilding
 mutablePipelineState.State.BlendState = BlendStates.AlphaBlend
 mutablePipelineState.Update
- 
+ 
 // Applying the state to the pipeline
 CommandList.SetPipelineState(mutablePipelineState.CurrentState);
 ```
 
 # Rasterizer state
 
-The rasterizer can be set using the @'SiliconStudio.Xenko.Graphics.PipelineStateDescription.RasterizerState' property. A set of predefined descriptions is held by the @'SiliconStudio.Xenko.Graphics.RasterizerStates' class. They deal with the cull mode, and should be enough for most use cases:
+The rasterizer can be set using the @'SiliconStudio.Xenko.Graphics.PipelineStateDescription.RasterizerState' property. A set of predefined descriptions is held by the @'SiliconStudio.Xenko.Graphics.RasterizerStates' class. They deal with the cull mode, and should be enough for most use cases:
 
 - @'SiliconStudio.Xenko.Graphics.RasterizerStates.CullNone': no culling
 - @'SiliconStudio.Xenko.Graphics.RasterizerStates.CullFront': front-face culling
@@ -69,11 +69,11 @@ pipelineStateDescription.RasterizerState = rasterizerStateDescription;
 
 # Depth and stencil states
 
-The @'SiliconStudio.Xenko.Graphics.PipelineStateDescription.DepthStencilState' property contains the depth and stencil states. A set of commonly used states is defined by the @'SiliconStudio.Xenko.Graphics.DepthStencilStates' class:
+The @'SiliconStudio.Xenko.Graphics.PipelineStateDescription.DepthStencilState' property contains the depth and stencil states. A set of commonly used states is defined by the @'SiliconStudio.Xenko.Graphics.DepthStencilStates' class:
 
 - @'SiliconStudio.Xenko.Graphics.DepthStencilStates.Default': depth read and write with a less-than comparison
 - @'SiliconStudio.Xenko.Graphics.DepthStencilStates.DefaultInverse': read and write with a greater-or-equals comparison
-- @'SiliconStudio.Xenko.Graphics.DepthStencilStates.DepthRead': read only with a less-than comparison
+- @'SiliconStudio.Xenko.Graphics.DepthStencilStates.DepthRead': read only with a less-than comparison
 - @'SiliconStudio.Xenko.Graphics.DepthStencilStates.None': neither read nor write
 
 **Code:** Setting the depth state
@@ -108,9 +108,9 @@ CommandList.SetStencilReference(2);
 # Blend state
 
 The @'SiliconStudio.Xenko.Graphics.PipelineStateDescription.BlendState' and @'SiliconStudio.Xenko.Graphics.PipelineStateDescription.SampleMask' properties control blending.
-A set of commonly used blend states is defined by the @'SiliconStudio.Xenko.Graphics.BlendStates' class:
+A set of commonly used blend states is defined by the @'SiliconStudio.Xenko.Graphics.BlendStates' class:
 
-- @'SiliconStudio.Xenko.Graphics.BlendStates.Additive': sums the colors 
+- @'SiliconStudio.Xenko.Graphics.BlendStates.Additive': sums the colors 
 - @'SiliconStudio.Xenko.Graphics.BlendStates.AlphaBlend': sums the colors using the alpha of the source on the destination color
 - @'SiliconStudio.Xenko.Graphics.BlendStates.NonPremultiplied': sums using the alpha of the source on both colors
 - @'SiliconStudio.Xenko.Graphics.BlendStates.Opaque': replaces the color
@@ -202,7 +202,7 @@ pipelineStateDescription.Output = renderOutputDescription;
 For convenience, the @'SiliconStudio.Xenko.Graphics.RenderOutputDescription.CaptureState(SiliconStudio.Xenko.Graphics.CommandList)' method can be used to retrieve the output description, that was last set on a @'SiliconStudio.Xenko.Graphics.CommandList'.
 This is especially useful in combination with @'SiliconStudio.Xenko.Graphics.MutablePipelineState', when the render target might not be known up front.
 
-**Code:** Capturing output desciption
+**Code:** Capturing output description
 
 ```cs
 mutablePipelineState.State.Output.CaptureState(CommandList);

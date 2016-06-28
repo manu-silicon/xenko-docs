@@ -21,7 +21,7 @@ Properties that defines a ambient light:
 
 ![media/AmbientLightProperties.png](media/AmbientLightProperties.png) 
 
- 
+ 
 
 | Property     | Description                                                                                                                                                                                    |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,11 +39,11 @@ Properties that defines a ambient light:
 | Culling Mask | Defines which entity groups are affected by this light. By default, all groups are affected.                                                                                                   |
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 

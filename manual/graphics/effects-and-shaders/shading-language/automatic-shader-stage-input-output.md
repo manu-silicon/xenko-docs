@@ -103,7 +103,7 @@ Schematically, adding a new attribute requires to update all the stages and inte
 
 # XKSL
 
-XKSL offers a convenient way to pass parameters across the different stages of your shader. The streams variables are:
+XKSL offers a convenient way to pass parameters across the different stages of your shader. The streams variables are:
 
 - variables
 - defined like any class member, with the stream keyword.
@@ -127,7 +127,7 @@ Once you have declared a stream, you can access it at any stage of your shader. 
 class BaseShader
 {
 	stream float3 myVar;
- 
+ 
 	float3 Compute()
 	{
 		return streams.myVar;

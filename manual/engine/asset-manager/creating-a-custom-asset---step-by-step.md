@@ -46,7 +46,7 @@ We need to create two separate project assembly:
 
 ## Create the in-game asset
 
-In the ingame assembly, we are going to create the asset representation of the storage `RangeValues` that will be used by the game.
+In the ingame assembly, we are going to create the asset representation of the storage `RangeValues` that will be used by the game.
 
 The class could be implemented like this:
 
@@ -205,5 +205,5 @@ PremultiplyAlpha: true
 
 The `TextureAsset` has a compiler that will save the texture using Image serializer. At runtime, this texture can be loaded through the asset manager using either an image or a texture.
 
- 
+ 
 

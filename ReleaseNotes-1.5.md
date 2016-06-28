@@ -10,7 +10,7 @@ Skeletons can be created alongside other assets, when importing an FBX file or o
 
 ## Root motion support for models, cameras, lights, etc.
 
-Animations now apply root motion if they have no skeleton, or the ‘Root Motion’ property is enabled on the animation asset. The animation will then move the entity itself, instead of the skeleton’s root bone.
+Animations now apply root motion if they have no skeleton, or the ‘Root Motion’ property is enabled on the animation asset. The animation will then move the entity itself, instead of the skeleton's root bone.
 This is especially useful to import animations of lights, cameras or unskinned models, without the need to bind them to the bones of a skeleton.
 
 The FBX importer will now also import animations of various camera parameters (near-plane, far-plane, field of view) and apply them to the CameraComponent of the animated entity. More properties may be supported in the future.
@@ -98,9 +98,9 @@ Release date: 2016/02/18
 
 ## Issues fixed
 - Fix a problem in the package upgrade erasing the content of shader and effect files.
-- Fix a crash in the resolution of invalid relative pathes preventing to load the project in the editor.
+- Fix a crash in the resolution of invalid relative paths preventing to load the project in the editor.
 - Do not add pillar boxes when resizing the window of a landscape game under Windows 10 but readjust the size of the buffer.
-- Replace the `MS Mincho` font by an embeded free font in samples (The font is not available on every systems)
+- Replace the `MS Mincho` font by an embedded free font in samples (The font is not available on every systems)
 
 # Version 1.5.2-beta
 Release date: 2016/01/15
@@ -114,7 +114,7 @@ Release date: 2016/01/15
 
 ### Engine
 
-- Fix problem occuring with debugging async functions (local variable gone, namespace ignored, step over broken).
+- Fix problem occurring with debugging async functions (local variable gone, namespace ignored, step over broken).
 - Fix the issues preventing from passing Windows 10 store certification. 
 - Add support for proper resizing in Windows Universal Apps.
 
@@ -231,7 +231,7 @@ Release date: 2015/12/17
 - Fix a potential crash when the texture region is outside of the image.
 - Fix a bug preventing to create a frame in the sprite editor when dropping a file.
 - Fix a bug preventing to drop asset in an empty folder.
-- Fix error when attempting to import animation from a model that doesn’t have any.
+- Fix error when attempting to import animation from a model that doesn't have any.
 - Fix incorrect size of full screen window when screen resolution has changed.
 - Fix package dependency issue when removing a dependent package.
 

@@ -24,7 +24,7 @@ It also propose shortcuts to all your recent projects and provides direct links 
 
 The list on the left lists all the Xenko SDK versions available on the server. 
 
-Simply click on the **Download** button next to latest Xenko version (grayed).
+Simply click on the **Download** button next to latest Xenko version (grayed).
 
 We also provide a **plugin for Visual Studio integration**. 
 
@@ -34,11 +34,11 @@ This plugin is not compulsory, but we highly recommend you to install it. Thanks
 
 If you manually remove the plugin from Visual Studio you can always install it again with the **Re-Install** button. 
 
-When the install is over, choose the version to start by clicking on it and then click the **Start** button.
+When the install is over, choose the version to start by clicking on it and then click the **Start** button.
 
 Then the Game Studio will be launched and you will be ready to [create your first game](howto-create-and-setup-new-game.md)!
 
- 
+ 
 
-Note: for more info about the launcher, see [Xenko Launcher](../xenko-launcher/index.md)
+Note: for more info about the launcher, see [Xenko Launcher](../xenko-launcher/index.md)
 

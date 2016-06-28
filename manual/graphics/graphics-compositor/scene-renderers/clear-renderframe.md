@@ -1,6 +1,6 @@
 # Clear RenderFrame
 
-Clears a render frame. 
+Clears a render frame. 
 
 ![media/clear-renderframe-1.png](media/clear-renderframe-1.png) 
 
@@ -20,9 +20,9 @@ Clears a render frame. 
 | Output        | See Common properties in [Scene Renderers](index.md)                                                                     |
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 

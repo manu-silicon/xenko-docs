@@ -2,12 +2,12 @@
 
 A bundle of assets allows to package assets into a single archive that can be downloaded into the game at a specific time.
 
-It allows creation of **Downloadable Content (DLC)**.
+It allows creation of **Downloadable Content (DLC)**.
 
 Basic rules:
 
 - A project can generate several bundle.
-- A bundle is created from several **assets selectors**  (Currently, only the `PathSelector` and `TagSelector` are supported)
+- A bundle is created from several **assets selectors**  (Currently, only the `PathSelector` and `TagSelector` are supported)
 - A bundle can have dependencies to others bundles
 - Every bundle implicitly references `default` bundle, where every asset which shouldn't go in a specific bundle will be packaged
 - Once a bundle is deployed into the game, all assets from this bundle and all its dependencies are accessible
@@ -27,7 +27,7 @@ Example:
 - A bundle named `MyBundleName2` will embed assets with tags `MyTag3` and `MyTag4`. This bundle has a dependency to `MyBundleName`
 - There is also a `PathSelector` which follow the `.gitignore` filtering convention.
 
- 
+ 
 
 ```cs
 Bundles:
@@ -40,7 +40,7 @@ Bundles:
  - Name: MyBundleName2
    Dependencies:
     - MyBundleName
-   Selectors:
+   Selectors:
     - !TagSelector
       Tags: 
         - MyTag3
@@ -70,7 +70,7 @@ Bundles:
 > - Shared assets might be duplicated if not specifically placed in common or default package, but that is intended (i.e. if user wishes to distribute 2 separate DLC that need common assets but need to be self-contained).
 > - Every bundle implicitly depends on default bundle.
 > 
->      
+>      
 
 # Loading Bundle at runtime
 
@@ -79,7 +79,7 @@ Loading bundle is done through `ObjectDatabase.LoadBundle(string bundleName) (re
 ```cs
 // Load bundle
 Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle("MyBundleName2");
- 
+ 
 // Load specified asset
 var texture = Assets.Load<Texture2D>("AssetContainedInMyBundleName2");
 ```
@@ -87,7 +87,7 @@ var texture = Assets.Load<Texture2D>("AssetContainedInMyBundleName2");
 
 # Selectors
 
- Selectors help deciding which assets are stored in a specific bundle.
+ Selectors help deciding which assets are stored in a specific bundle.
 
 ## Tag selector
 
@@ -101,11 +101,11 @@ Properties:
 
 Select assets based on their path.
 
-Standard .gitignore patterns are supported (except ! (negate), # (comments) and [0-9] (groups)).
+Standard .gitignore patterns are supported (except ! (negate), # (comments) and [0-9] (groups)).
 
 Properties:
 
 - Paths: List of filters. Any asset whose URL matches one of the filter will be included.
 
- 
+ 
 

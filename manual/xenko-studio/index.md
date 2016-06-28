@@ -1,6 +1,6 @@
 # Xenko Studio
 
-A central place to start developing your game with Xenko, the Paradox Studio is helping to fully manage your assets:
+A central place to start developing your game with Xenko, the Xenko Studio is helping to fully manage your assets:
 
 - You can import your assets, modify their parameters and see changes in real-time in the preview window.
 - You can organize your assets by folders, attach tags and get notifications from modified assets on the disk.
@@ -36,9 +36,9 @@ You can then edit those assets in the Property Editor:
 
 ## Samples
 
-Xenko is coming with a set of technical samples for each engine parts (2D, 3D, Sprites, Fonts, UI, Audio, Input...) and a set of small games to help you boostrap into making your own game.
+Xenko is coming with a set of technical samples for each engine parts (2D, 3D, Sprites, Fonts, UI, Audio, Input...) and a set of small games to help you bootstrap into making your own game.
 
-You can access them by creating a new project, and selecting the appropriate sample template. 
+You can access them by creating a new project, and selecting the appropriate sample template. 
 
 Feel free to take a look at them, this should inspire you and give you concrete examples on how to use Xenko:
 

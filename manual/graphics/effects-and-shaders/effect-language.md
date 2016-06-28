@@ -2,18 +2,18 @@
 
 # Create shaders in C&#35;
 
-You can create a shader at runtime with @'SiliconStudio.Xenko.Shaders.ShaderSource' objects. They come in three veriations:
+You can create a shader at runtime with @'SiliconStudio.Xenko.Shaders.ShaderSource' objects. They come in three variations:
 
 - @'SiliconStudio.Xenko.Shaders.ShaderClassSource': corresponding to a unique class
 - @'SiliconStudio.Xenko.Shaders.ShaderMixinSource': mix several @'SiliconStudio.Xenko.Shaders.ShaderSource', setting preprocessor values, defining compositions
 - @'SiliconStudio.Xenko.Shaders.ShaderArraySource': used for arrays of compositions
 
-This method will produce shaders at runtime. However, many platforms do not support HLSL and do not have the ability to compile shaders at runtime. Futhermore, this approach does not benefit from the reusability of mixins. 
+This method will produce shaders at runtime. However, many platforms do not support HLSL and do not have the ability to compile shaders at runtime. Furthermore, this approach does not benefit from the reusability of mixins. 
 
 # Xenko Effects (XKFX)
 
-Many shaders are variations or combinations of pre-existing ones. For example, some meshes cast shadows, others receive them, still others need skinning.
-To reuse code, it is desireable to select which parts to use through conditions, such as "Skinning required".
+Many shaders are variations or combinations of pre-existing ones. For example, some meshes cast shadows, others receive them, still others need skinning.
+To reuse code, it is desirable to select which parts to use through conditions, such as "Skinning required".
 
 This is often solved by "uber shaders": Monolithic shaders, which are configured by a set of preprocessor parameters.
 
@@ -22,14 +22,14 @@ Therefore, the simple code blocks defined by XKSL classes, can be mixed together
 
 ## General syntax
 
-A *.XKFX file is a small program used to generate shader permutations. It takes a set of parameters (key and value in a collection) and produce a `ShaderMixinSource` ready to be compiled.
+A *.XKFX file is a small program used to generate shader permutations. It takes a set of parameters (key and value in a collection) and produce a `ShaderMixinSource` ready to be compiled.
 
 **Code:** Example of XKFX file
 
 ```cs
 using SiliconStudio.Xenko.Effects.Data;
 
-namespace ParadoxEffects
+namespace XenkoEffects
 {
 	params MyParameters
 	{
@@ -69,7 +69,7 @@ namespace ParadoxEffects
 
 ## Adding mixins
 
-To add a mixin, simply use `mixin <mixin_name>`.
+To add a mixin, simply use `mixin <mixin_name>`.
 
 ## Using parameters
 
@@ -82,7 +82,7 @@ The syntax is similar to C#. The following rules are added:
 
 ```cs
 using params MaterialParameters;
- 
+ 
 if (MaterialParameters.AlbedoDiffuse != null)
 {
 	mixin MaterialParameters.AlbedoDiffuse;
@@ -90,7 +90,7 @@ if (MaterialParameters.AlbedoDiffuse != null)
 ```
 
 
-The parameters behave like any variable. You can read and write their value, compare their values and set template parameters. Since some parameters store mixins, they can be used for composition and inheritance, too.
+The parameters behave like any variable. You can read and write their value, compare their values and set template parameters. Since some parameters store mixins, they can be used for composition and inheritance, too.
 
 ## Custom parameters
 
@@ -115,9 +115,9 @@ To add a composition, simply assign the composition variable to your mixin. This
 ```cs
 // albedoSpecular is the name of the composition variable in the mixin
 mixin compose albedoSpecular = ComputeColorTexture;
- 
+ 
 or
- 
+ 
 mixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;
 ```
 
@@ -135,7 +135,7 @@ partial shader MyPartialShader
 	mixin compose color1 = ComputeColorStream;
 	mixin compose color2 = ComputeColorFixed;
 }
- 
+ 
 // to use it
 mixin MyPartialShader;
 mixin compose myComposition = MyPartialShader;

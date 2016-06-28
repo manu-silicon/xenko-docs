@@ -2,7 +2,7 @@
 
 Various preprocessor variables can be used if you need to have different code depending on platform and graphics API.
 
-Note that using `Platform.Type (ref:{SiliconStudio.Core.Platform.Type})` is recommended where possible.
+Note that using `Platform.Type (ref:{SiliconStudio.Core.Platform.Type})` is recommended where possible.
 
 # Platform
 

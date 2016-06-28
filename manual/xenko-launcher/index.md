@@ -15,7 +15,7 @@ The **launcher** is the starting point of Xenko, with it you can:
 
 - A: Start the game studio
 - B: Manage versions of xenko
-- C: Interact with the community
+- C: Interact with the community
 - D: Open recent projects
 - E: Last tutorials and news
 
@@ -27,9 +27,9 @@ To start the displayed version of Xenko just click on the button.
 
 To change the version of xenko to launch, click on the version you want in the list (B)
 
-![media/xenko-launcher-2.png](media/xenko-launcher-2.png)        **→**       ![media/xenko-launcher-3.png](media/xenko-launcher-3.png) 
+![media/xenko-launcher-2.png](media/xenko-launcher-2.png)        **→**       ![media/xenko-launcher-3.png](media/xenko-launcher-3.png) 
 
-Note: by default the launcher closes after starting the game studio. If you prefer keeping the launcher open you can uncheck the corresponding checkbox 
+Note: by default the launcher closes after starting the game studio. If you prefer keeping the launcher open you can uncheck the corresponding checkbox 
 
 # 
 
@@ -78,7 +78,7 @@ Note that launcher is capable of determining the adequate version of Xenko, so y
 
 # Tutorials and news streams
 
-The launcher also proposes you direct links to tutorials and news. 
+The launcher also proposes you direct links to tutorials and news. 
 
 Just click on the item to be automatically redirected to the website.
 
@@ -88,5 +88,5 @@ Just click on the item to be automatically redirected to the website.
 - B: Switch to the news stream
 - C: The list of items
 
- 
+ 
 

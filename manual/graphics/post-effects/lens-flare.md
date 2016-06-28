@@ -19,7 +19,7 @@ The artifacts are generally aligned along the line defined by the original brigh
 | Color Aberration Strength | Strength of the color aberration artifacts.                                                                                                           |
 
 
- 
+ 
 
- 
+ 
 

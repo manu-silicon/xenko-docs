@@ -17,7 +17,7 @@ In addition to these straightforward concepts, XKSL uses a original way to handl
 
 # Keywords
 
-XKSL uses the same set of keywords than HLSL but adds some new ones:
+XKSL uses the same set of keywords than HLSL but adds some new ones:
 
 - `stage`: method and member keyword. This keyword ensures that the method or member is only defined once and is the same in the compositions.
 - `stream`: member keyword. The member is accessible at every stage of the shader. [See this page](automatic-shader-stage-input-output.md).
@@ -26,22 +26,22 @@ XKSL uses the same set of keywords than HLSL but adds some new ones:
 - `abstract`: is used in front of a method declaration (without a body).
 - `clone`: method keyword. When a method appears several times in the inheritance tree of class, this keyword forces the creation of multiple instances of the method at each level of the inheritance instead of one. [See this page](composition.md).
 - `Input`: for geometry and tessellation shaders. [See this page](shader-stages.md).
-- `Output`: for geometry and tessellation shaders. [See this page](shader-stages.md).
-- `Input2`: for tessellation shader. [See this page](shader-stages.md).
-- `Constants`: for tessellation shader. [See this page](shader-stages.md).
+- `Output`: for geometry and tessellation shaders. [See this page](shader-stages.md).
+- `Input2`: for tessellation shader. [See this page](shader-stages.md).
+- `Constants`: for tessellation shader. [See this page](shader-stages.md).
 
 # Abstract methods
 
-Abstract methods are available in XKSL. They should be prefixed with the `abstract` keyword. You can inherit from a class with abstract methods without having to implement them. The compiler will simply produce a harmless warning. However, it should be implemented in your final shader to prevent a compilation error.
+Abstract methods are available in XKSL. They should be prefixed with the `abstract` keyword. You can inherit from a class with abstract methods without having to implement them. The compiler will simply produce a harmless warning. However, it should be implemented in your final shader to prevent a compilation error.
 
 # Annotations
 
-Like in HLSL, annotations are availables in XKSL. Here are some the most useful ones:
+Like in HLSL, annotations are available in XKSL. Here are some the most useful ones:
 
-- `[Color]` for float4 variables. The ParameterKey will have the type `Color4` instead of `Vector4`. It also specifies to GameStudio that this variable should be treated as a color, giving you the most convenient interface to edit it.
-- `[Link(...)]` specifies which ParameterKey to use to set this value. However an independent default key is still created.
-- `[Map(...)]` specifies which ParameterKey to use to set this value. No new ParameterKey will be created.
-- `[RenameLink]` prevents the creation of a ParameterKey. It should be used with `[Link()]`.
+- `[Color]` for float4 variables. The ParameterKey will have the type `Color4` instead of `Vector4`. It also specifies to GameStudio that this variable should be treated as a color, giving you the most convenient interface to edit it.
+- `[Link(...)]` specifies which ParameterKey to use to set this value. However an independent default key is still created.
+- `[Map(...)]` specifies which ParameterKey to use to set this value. No new ParameterKey will be created.
+- `[RenameLink]` prevents the creation of a ParameterKey. It should be used with `[Link()]`.
 
 **Code:** Annotations
 
@@ -49,11 +49,11 @@ Like in HLSL, annotations are availables in XKSL. Here are some the most useful 
 class BaseClass
 {
 	[Color] float4 myColor;
- 
+ 
 	[Link("ProjectKeys.MyTextureKey")]
 	[RenameLink]
 	Texture2D texture;
- 
+ 
 	[Map("Texturing.Texture0")] Texture2D defaultTexture;
 };
 ```
@@ -68,7 +68,7 @@ class BaseInterface
 {
 	abstract float Compute();
 };
- 
+ 
 class BaseClass : BaseInterface
 {
 	float Compute()
@@ -76,7 +76,7 @@ class BaseClass : BaseInterface
 		return 1.0f;
 	}
 };
- 
+ 
 class ClassA : BaseClass
 {
 	override void Compute()
@@ -84,7 +84,7 @@ class ClassA : BaseClass
 		return 2.0f;
 	}
 };
- 
+ 
 class ClassB : BaseClass
 {
 	override void Compute()
@@ -104,11 +104,11 @@ Now let's look at what happens when we change the inheritance order between `Cla
 class MixAB : ClassA, ClassB
 {
 };
- 
+ 
 class MixBA : ClassB, ClassA
 {
 };
- 
+ 
 // Resulting code (representation)
 
 class MixAB : BaseInterface, BaseClass, ClassA, ClassB
@@ -117,14 +117,14 @@ class MixAB : BaseInterface, BaseClass, ClassA, ClassB
 	{
 		// code from BaseClass
 		float v0 = 1.0f;
- 
+ 
 		// code from ClassA
 		float v1 = 2.0f;
- 
+ 
 		// code from ClassB
 		float prevValue = v1;
 		float v2 = 5.0f + prevValue;
- 
+ 
 		return v2; // = 7.0f
 	}
 };
@@ -151,7 +151,7 @@ class MixBA : BaseInterface, BaseClass, ClassB, ClassA
 
 # Static calls
 
-It is also possible to use a variable or call a method from a class without having to inherit from it. Simply use `<class_name>.<variable or method_name>` in your code. It behaves the same way than a static call. However you should be aware that if you statically call a method that uses class variables, the shader will not compile. This is convenient way to only use a part of a shader but you shouldn't think this is an optimization. The shader compiler already automatically remove any unnecessary variables.
+It is also possible to use a variable or call a method from a class without having to inherit from it. Simply use `<class_name>.<variable or method_name>` in your code. It behaves the same way than a static call. However you should be aware that if you statically call a method that uses class variables, the shader will not compile. This is convenient way to only use a part of a shader but you shouldn't think this is an optimization. The shader compiler already automatically remove any unnecessary variables.
 
 **Code:** Static calls
 
@@ -163,14 +163,14 @@ class StaticClass
 	{
 		return 2.0f * a;
 	}
- 
+ 
 	// this method uses a
 	float NonStaticMethod()
 	{
 		return 2.0f * StaticValue;
 	}
 };
- 
+ 
 // this class is fine
 class CorrectStaticCallClass
 {
@@ -179,7 +179,7 @@ class CorrectStaticCallClass
 		return StaticClass.StaticValue * StaticMethod(5.0f);
 	}
 };
- 
+ 
 // this class will not compile since the call is not static
 class IncorrectStaticCallClass 
 {
@@ -188,7 +188,7 @@ class IncorrectStaticCallClass
 		return StaticClass.NonStaticMethod();
 	}
 };
- 
+ 
 // one way to fix this
 class IncorrectStaticCallClassFixed : StaticClass
 {

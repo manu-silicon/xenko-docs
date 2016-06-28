@@ -23,7 +23,7 @@ A buffer in the sRGB space will be be displayed correctly on a monitor or a TV s
 | Value    | Gamma value. A traditional value is around 2.2. |
 
 
- 
+ 
 
- 
+ 
 

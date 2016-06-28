@@ -1,20 +1,20 @@
 # Material Layers
 
-Material layers gives a powerful way to combine multiple materials to build more complex materials. 
+Material layers gives a powerful way to combine multiple materials to build more complex materials. 
 
- 
+ 
 
 ![media/material-layers-1.png](media/material-layers-1.png) 
 
- 
+ 
 
- 
+ 
 
 The following screenshot shows the blending of a rust material with a gold material.
 
 ![media/material-layers-2.png](media/material-layers-2.png) 
 
- 
+ 
 
 The following diagram shows the definition of a material blend above:
 
@@ -30,7 +30,7 @@ The following diagram shows the definition of a material blend above:
 |                 | - Values in-between 0 and 1 will generate a blend of a parameters of the previous material with the material defined by this layer       |
 |                 |                                                                                                                                          |
 |                 |                                                                                                                                          |
-| Layer Overrides |                                                                                                                                          |
+| Layer Overrides |                                                                                                                                          |
 | - UV Scale      | A UV scale applied to all textures UV of the material of the layer (excluding the occlusion map)                                         |
 |                 |                                                                                                                                          |
 |                 |                                                                                                                                          |

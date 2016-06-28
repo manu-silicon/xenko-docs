@@ -4,7 +4,7 @@
 
 Prefabs allow you to assemble entities into building blocks and easily reuse them in any of your scenes. Changes to your prefabs will be reflected on all instances (as long as properties are not overridden).
 
-We even took the concept one step further to empower our users, by having prefabs within prefabs, as well as the possibility to use only part of a prefab when you instantiate it. And of course, removing or rearranging a few entities won’t break your prefab synchronization!
+We even took the concept one step further to empower our users, by having prefabs within prefabs, as well as the possibility to use only part of a prefab when you instantiate it. And of course, removing or rearranging a few entities won't break your prefab synchronization!
 
 <img src="http://doc.xenko.com/1.6/media/ReleaseNotes-1.6/prefabs.gif" align="center" />
 
@@ -18,7 +18,7 @@ You can now use any asset as an archetype for another asset. When you change a p
 
 You can now create and edit particle systems directly in the Xenko Game Studio. Particles are deeply integrated in the game engine and leverage the powerful effect system and its high level of customization.
 
-While there are still several features on the roadmap, the current implementation is sufficient for most games. The ability to customize almost all aspects of the particle engine allows you to add features tailored to your game’s specific needs.
+While there are still several features on the roadmap, the current implementation is sufficient for most games. The ability to customize almost all aspects of the particle engine allows you to add features tailored to your game's specific needs.
 
 <img src="http://doc.xenko.com/1.6/media/ReleaseNotes-1.6/particle1.gif" align="center" />
 
@@ -32,12 +32,12 @@ The particle engine supports many features out of the box:
 - Powerful force fields which offer more control than simple attractors and repulsors
 - Collisions
 - Animated attributes such as size, color, rotation
-- Flipbooks, UV animation and support for the Xenko Shading Language
+- Flip books, UV animation and support for the Xenko Shading Language
 - Ribbons and trails renderers added to the engine. Check out our [tutorial](http://doc.xenko.com/1.6/manual/particles/particles-tutorials/particles-tutorials-ribbons/index.html) for more details.
 
 ### Modular system
 
-All aspects of particle systems are broken down into individuals modules like spawners, initializers and updaters, and each of these modules is easily tweakable and customizable. Check out the samples and the Xenko documentation for a detailed walkthrough.
+All aspects of particle systems are broken down into individuals modules like spawners, initializers and updaters, and each of these modules is easily tweakable and customizable. Check out the samples and the Xenko documentation for a detailed walk-through.
 
 ### Curve Editor
 
@@ -53,7 +53,7 @@ The low-level API has been changed to more closely resemble DirectX 12 and Vulka
 
 The high-level pipeline has been completely reworked, to achieve the following goals, most of which we will tackle in the upcoming releases:
 
-- Introduce a clean and extensible architecture to easily build new graphics features on (hoping to soon add a Forward+ renderer, IBL lightprobes, RLR, etc.)
+- Introduce a clean and extensible architecture to easily build new graphics features on (hoping to soon add a Forward+ renderer, IBL light probes, RLR, etc.)
 - New medium-level layer: lightweight RenderFeature, RenderStage, RenderObject, etc.
 - Easy for users to write small customizations (by implementing RenderFeatures)
 - Allow multi-threading of all parts of the pipeline
@@ -97,6 +97,38 @@ The Game Settings asset has been improved: You can now have different settings d
 
 For example, you might want to set different off-screen resolutions for your game on Android depending on the GPU model. Or you could use one of our new Direct3D12, OpenGL or OpenGL ES renderers on Windows.
 
+# Version 1.6.7-beta
+
+Release date: 2016/06/09
+
+## Enhancements
+
+### Game Studio
+- Don't wait for editor initialization before showing the editor window. This should prevent editor layouts from suddendly switching without notice, especially when opening a big scene.
+- Save the list of opened editors more often (everytime a new editor is opened). Before it was only saved when editing the Game Studio properly and thus the list would not be saved when a crash occurred.
+
+## Issues fixed
+
+### Graphics
+- D3D12: Static sampler didn't properly set comparison func and border, resulting in broken shadow maps
+- OpenGL ES: Improved texture format supports depending on OpenGL ES version and extension presents (esp. for float texture on ES2)
+- OpenGL ES: EXT_sRGB doesn't seem to properly work on Adreno 4xx, but since it is usually available through ES3 context, we use that first when available
+- OpenGL: AMD GPU driver didn't like the fact there was no #version in the Copy GLSL shader
+- OpenGL: Even though we use SDL, image loading now uses same code as WinForms/WPF (since SDL_image loading code is not implemented yet)
+
+### Assets
+- AssetCompiler was caching assemblies so that they could be modified while running. This feature is only useful in development and was making thing both slower and causing too long path issues, it has therefore been disabled for end-user install ([#410](https://github.com/SiliconStudio/xenko/issues/410))
+
+### Engine
+- Added missing XenkoDefaultFont root asset in default package, this makes the profiler system work again out of the box.
+
+### Game Studio
+- Fix a crash that could occurs when loading a project that contains broken paths to resource files
+- Prevent the Game Studio process to keep running when a fatal problem occurs during the loading
+
+### Particles
+- Bug fix where two or more child entities concurrently try to update their parent entity's transform matrix.
+
 # Version 1.6.6-beta
 
 Release date: 2016/05/27
@@ -116,7 +148,7 @@ Release date: 2016/05/27
 
 ### Engine
 
-- Changed how OpenGL ES expected vs actual version is handled; this should fix various issues related to context creation on Android and also code targeting older OpenGL should be more consistant across devices.
+- Changed how OpenGL ES expected vs actual version is handled; this should fix various issues related to context creation on Android and also code targeting older OpenGL should be more consistent across devices.
 - There was some issues for GPU resource disposal that might have lead to incorrect state (might fix some issues when closing scenes in the editor).
 - ShadowMaps across multiple RenderViews were not working properly (same shadow map texture can be reused but in fact was not).
 - Improved the engine's behavior when mobile apps require to handle multiple orientations.
@@ -197,7 +229,7 @@ Release date: 2016/04/27
 - Fix an issue in the sprite editor preventing to properly edit newly added frames
 - Fix a cache issue in the sprite editor preventing to the magic wand to work properly after modifying a source image externally ([#389](https://github.com/SiliconStudio/xenko/issues/389))
 - Fix a crash that could occur when manipulating the Materials of a model component in the scene editor
-- Fix a crash when loading projects with Audio related compoments/assets
+- Fix a crash when loading projects with Audio related components/assets
 - Fix a crash that might occur when closing an editor
 - Fix an issue when asset compiler was failing but not properly returning error. As a result, it was easy to run into issue like running the game once and keep it in background (lock files), editing, and when running it again it would still use the older compiled assets.
 - Lights and camera gizmo were improperly scaled
@@ -207,7 +239,7 @@ Release date: 2016/04/27
 - Camera now ignore scaling when computing view matrix
 - Made various types public instead of internal, so that user can easily extend the rendering pipeline by themselves
 - EffectValidator was failing on effects without any permutation values ([#378](https://github.com/SiliconStudio/xenko/issues/378))
-- Added a debuger proxy for the new ParameterCollection
+- Added a debugger proxy for the new ParameterCollection
 - MSAA parameters are now properly forwarded to the main swap chain. Note that it still can't be used in RenderFrame until MSAA targets are properly resolved.
 
 ### Particles
@@ -316,7 +348,7 @@ Release date: 2016/03/15
 
 Simply open your older projects with new version of GameStudio. It will probably fail to compile your assemblies since API changed little bit, but you can still continue.
 
-Then, save back your project in GameStudio. You now can open your project with VIsual Studio and try to fix your game code with latest API changes.
+Then, save back your project in GameStudio. You now can open your project with Visual Studio and try to fix your game code with latest API changes.
 
 ## Enhancements
 
@@ -324,7 +356,7 @@ Then, save back your project in GameStudio. You now can open your project with V
 
 ### Engine
 
-- The KeyedSortedList now implements ICollection<T> instead of IList<T> annd is more consistent with CollectionDescriptor.
+- The KeyedSortedList now implements ICollection<T> instead of IList<T> and is more consistent with CollectionDescriptor.
 
 ### Game Studio
 

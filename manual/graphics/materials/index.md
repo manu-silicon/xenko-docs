@@ -4,7 +4,7 @@ A Material defines the appearance of the surface of a 3D model and how it reacts
 
 ![media/materials-reference-1.png](media/materials-reference-1.png) 
 
- 
+ 
 
 A Material can use multiple layers of materials in order to build more complex materials.
 
@@ -26,7 +26,7 @@ In practice, a material will generate a partial definition of a Shader that will
 
 
 
- 
+ 
 
- 
+ 
 

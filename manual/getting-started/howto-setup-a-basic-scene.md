@@ -26,7 +26,7 @@ Then use the gizmos to place the camera. Simply drag the arrows, planes or circl
 
 ![media/scale_24.png](media/scale_24.png) Activate the scale gizmo to resize the selected entity.
 
- 
+ 
 
 The gizmo can different space coordinates
 
@@ -36,13 +36,13 @@ The gizmo can different space coordinates
 
 ![media/film_projector_24.png](media/film_projector_24.png) Use the camera space coordinates (the axis are oriented in the same direction that the editor camera)
 
- 
+ 
 
 ![media/howto-setup-a-basic-scene-9.png](media/howto-setup-a-basic-scene-9.png) 
 
 # Graphics pipeline setup
 
-Now that we have a camera, we can setup the graphics pipeline. Click on the top **Scene** node of the scene to display the scene properties.
+Now that we have a camera, we can setup the graphics pipeline. Click on the top **Scene** node of the scene to display the scene properties.
 
 In the **Graphics Composition** category of the properties, add a new camera slot, and click on the hand icon to assign it to the camera you just created.
 

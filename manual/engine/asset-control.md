@@ -15,7 +15,7 @@ However, we now recommend to instead create a field in your script and fill it d
 Assets that will be compiled and packaged in your project are:
 
 - **Root assets (blue)**
-  - **Automatic** for a few asset types (i.e. Game Settings, Shaders)
+  - **Automatic** for a few asset types (i.e. Game Settings, Shaders)
   - Explicit (using "**Mark as Root**" on the asset)
 - **Dependencies of root assets (green)**
   - Since Game Settings is collected, that means that Default Scene and all its dependencies will be compiled as well (includes Model, Script field members pointing to other assets, etc...)
@@ -38,5 +38,5 @@ It means that if "MyGame" is current package, if you check "Mark as Root" on Sil
 
 As a result, you can use a shared package from multiple games even if you have different explicit roots.
 
- 
+ 
 

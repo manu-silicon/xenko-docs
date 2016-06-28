@@ -6,7 +6,7 @@ Now that we know the basics to create a game, let's see how we can **add an UI**
 
 As models or sprites, **UI is just a component** that can be set to entities.
 
-Starts by **opening your scene**. 
+Starts by **opening your scene**. 
 
 **Add an entity** that will be in charge of displaying the UI.
 
@@ -16,19 +16,19 @@ Starts by **opening your scene**. 
 
 ![media/howto-create-an-ui-2.png](media/howto-create-an-ui-2.png) 
 
-Ensure that the *Full Screen* property is checked, so that your UI is displayed on full screen.
+Ensure that the *Full Screen* property is checked, so that your UI is displayed on full screen.
 
-Set the desired size of your UI canvas using the *Virtual Resolution* property.
+Set the desired size of your UI canvas using the *Virtual Resolution* property.
 
 For details about the other parameters, see the UI specific documentation.
 
 ### Important notice
 
-The transformation of the UI entity directly affects the UI display.
+The transformation of the UI entity directly affects the UI display.
 
 It has been designed this way so that you easily perform UI transition effects (sliding, expanding, etc...).
 
-The consequence is that you should be careful about the entity you add the full screen UI component to. It should not be on a entity that is intended to move into the scene.
+The consequence is that you should be careful about the entity you add the full screen UI component to. It should not be on a entity that is intended to move into the scene.
 
 # Setup the UI layout
 
@@ -40,11 +40,11 @@ Then, the easiest way to create an UI is to **use scripts**.
 
 **Create a new script** in your game project.
 
-Use the @'SiliconStudio.Xenko.Engine.Entity', to **retrieve a reference to the @'SiliconStudio.Xenko.Engine.UIComponent'**.
+Use the @'SiliconStudio.Xenko.Engine.Entity', to **retrieve a reference to the @'SiliconStudio.Xenko.Engine.UIComponent'**.
 
-Create your layout by **building a hierarchy of @'SiliconStudio.Xenko.UI.UIElement'**.
+Create your layout by **building a hierarchy of @'SiliconStudio.Xenko.UI.UIElement'**.
 
-**Set the @'SiliconStudio.Xenko.Engine.RootElement' property** of the UI component to the newly created hierarchy.
+**Set the @'SiliconStudio.Xenko.Engine.RootElement' property** of the UI component to the newly created hierarchy.
 
 Here is a simple sample script, showing how to proceed in details.
 
@@ -88,9 +88,9 @@ namespace MyGame
 ```
 
 
- 
+ 
 
 Finally do not forget to **add your script to the scene UI entity** (see [HOWTO: use scripts](howto-use-scripts.md) for more details about this stage).
 
- 
+ 
 

@@ -18,7 +18,7 @@ The geometry and tessellation shaders need some kind of predefined structures as
 
 # Vertex shader
 
-A vertex shader has to set the variable with the semantic `SV_Position`. In `ShaderBase`, it is `ShadingPosition`.
+A vertex shader has to set the variable with the semantic `SV_Position`. In `ShaderBase`, it is `ShadingPosition`.
 
 **Code:** Example of vertex shader
 
@@ -34,7 +34,7 @@ override stage void VSMain()
 
 # Pixel shader
 
-A pixel shader has to set the variable with the semantic `SV_Target`. In `ShaderBase`, it is `ColorTarget`.
+A pixel shader has to set the variable with the semantic `SV_Target`. In `ShaderBase`, it is `ColorTarget`.
 
 **Code:** Example of pixel shader
 
@@ -59,8 +59,8 @@ void GSMain(triangle Input input[3], inout PointStream<Output> pointStream)
 	...
 	// fill the streams object
 	streams = input[0];
- 	...
- 
+ 	...
+ 
 	// always append streams
 	pointStream.Append(streams);
 	...
@@ -88,14 +88,14 @@ void HSMain(InputPatch<Input, 3> input, out Output output, uint uCPID : SV_Outpu
 	...
 	output = streams;
 }
- 
+ 
 void HSConstantMain(InputPatch<Input, 3> input, const OutputPatch<Input2, 3> output, out Constants constants)
 {
 	...
 	output = streams;
 	...
 }
- 
+ 
 [domain("tri")]
 void DSMain(const OutputPatch<Input, 3> input, out Output output, in Constants constants, float3 f3BarycentricCoords : SV_DomainLocation)
 {
@@ -106,7 +106,7 @@ void DSMain(const OutputPatch<Input, 3> input, out Output output, in Constants c
 ```
 
 
-`Input` and `Input2` both behave like streams. Don't forget to assign `ouput` to `streams` at the end of your stage.
+`Input` and `Input2` both behave like streams. Don't forget to assign `output` to `streams` at the end of your stage.
 
 # Compute shader
 
@@ -121,5 +121,5 @@ void CSMain()
 ```
 
 
-you can inherit from the `ComputeShaderBase` class and override the `Compute` method.
+you can inherit from the `ComputeShaderBase` class and override the `Compute` method.
 

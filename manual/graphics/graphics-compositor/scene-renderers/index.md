@@ -2,7 +2,7 @@
 
 ![media/scene-renderers-1.png](media/scene-renderers-1.png) 
 
- 
+ 
 
 Renderers can be added to a layer to perform a specific rendering operation in the scene graphics compositor pipeline.
 

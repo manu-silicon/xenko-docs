@@ -20,7 +20,7 @@ Step by step:
   
   Having a correct initial position is very important for a RigidBody as it will start immediate simulation and so might have consequences in the physics world.
   
-   
+   
 - **Adding the entity to the engine pipeline:**
   
   ```cs
@@ -28,11 +28,11 @@ Step by step:
 ```
   
   
-  This step is simple but hides something very important: this is exactly when the Collider/RigidBody/Character is created and added to the Physics engine for simulation. 
+  This step is simple but hides something very important: this is exactly when the Collider/RigidBody/Character is created and added to the Physics engine for simulation. 
   
-  This also means that from now we got a valid  Collider/RigidBody/Character object we can manipulate.
+  This also means that from now we got a valid  Collider/RigidBody/Character object we can manipulate.
   
-   
+   
 - **Access the Collider/RigidBody/Character objects:**
   
   ```cs
@@ -43,14 +43,14 @@ Step by step:
   An Entity with a PhysicsComponent might have multiple PhysicsElement/s. Using the indexer on PhysicsComponent you can easy access each of the elements.
   
   Above only one element was present. In turn PhysicsElement contains easy to use properties to access the physics objects, just make sure you select the right one (e.g. A Character cannot cast to RigidBody)
-- **From now you can use the SiliconStudio.Xenko.Physics library to manipulate in depth Colliders. E.g.:**
+- **From now you can use the SiliconStudio.Xenko.Physics library to manipulate in depth Colliders. E.g.:**
   
   ```cs
   ball1RigidBody.CanSleep = false; //disable sleeping so to never get stuck in case of no motion
   ball1RigidBody.Restitution = 1.0f;
 ```
 
- 
+ 
 
- 
+ 
 

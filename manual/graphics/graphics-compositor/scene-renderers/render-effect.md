@@ -1,6 +1,6 @@
 # Render Effect
 
-Applies an effect to a render frame 
+Applies an effect to a render frame 
 
 ![media/render-effect-1.png](media/render-effect-1.png) 
 

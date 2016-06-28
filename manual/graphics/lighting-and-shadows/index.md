@@ -16,11 +16,11 @@ Currently, only entities with a 3D model are affected by lights.
 > 
 > The 1.1.x-beta version supports currently only forward rendering but we will add forward++ rendering in a next update.    
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 

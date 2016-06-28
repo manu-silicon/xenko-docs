@@ -4,7 +4,7 @@
 
 A directional light is a light coming uniformly from one direction and is often used for simulating the sun or a light coming from a far distance.
 
- 
+ 
 
 ![media/DirectionalLightOverview.png](media/DirectionalLightOverview.png) 
 
@@ -12,37 +12,37 @@ In the studio, the directional light appears with the following icon:
 
 ![media/DirectionalLight.png](media/DirectionalLight.png) 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 Once selected, the gizmo of the directional light displays its main direction:
 
 ![media/DirectionalLightSelected.png](media/DirectionalLightSelected.png) 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 # Properties
 
@@ -50,7 +50,7 @@ Properties that defines a directional light:
 
 ![media/DirectionalLightProperties.png](media/DirectionalLightProperties.png) 
 
- 
+ 
 
 | Property     | Description                                                                                                         |
 | ------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -82,7 +82,7 @@ The technique used for directional light shadows is called cascaded shadow mappi
 
 The cascade term implies that multiple textures are used to slice the depth range from the camera point-of-view, allocating more pixels for the view space closer to the camera.
 
- 
+ 
 
 ![media/ShadowMappingCascades.png](media/ShadowMappingCascades.png) 
 
@@ -102,9 +102,9 @@ The colors shows the selected cascade texture for each distance range (Green:0, 
 | Filter              | Filtering allows to produce **soft shadows** instead of **hard shadows**. Currently, the implemented technique is PCF (Percentage Closer Filtering)                                                                               |
 |                     |                                                                                                                                                                                                                                   |
 |                     | *Note: Other techniques will be added*                                                                                                                                                                                            |
-| Size                | The size of the shadow map texture. Values are **extra large**, **large**, **medium**, **small** and **extra small**. See [shadow map atlas size calculation](shadows-optimizations.md) for details.                              |
+| Size                | The size of the shadow map texture. Values are **extra large**, **large**, **medium**, **small** and **extra small**. See [shadow map atlas size calculation](shadows-optimizations.md) for details.                              |
 |                     |                                                                                                                                                                                                                                   |
-|                     | For a directional light, this value is by default **large**, as a directional light has more visual impact than a range limited light.                                                                                            |
+|                     | For a directional light, this value is by default **large**, as a directional light has more visual impact than a range limited light.                                                                                            |
 | Cascade Count       | The number of cascades used for slicing the range of depth covered by the light. Values are 1, 2 or 4 cascades, though a typical scene would use 4 cascades.                                                                      |
 | Stabilization mode  | Defines the technique used to lower the effect of shadow map flickering. Values are **none**, **Projection Snapping** and **View Snapping**.                                                                                      |
 |                     |                                                                                                                                                                                                                                   |
@@ -136,9 +136,9 @@ The colors shows the selected cascade texture for each distance range (Green:0, 
 | Debug               | For debugging purpose, if set to true, the shadow map will display a color per cascade.                                                                                                                                           |
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 

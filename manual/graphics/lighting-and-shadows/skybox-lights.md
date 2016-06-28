@@ -4,7 +4,7 @@
 
 A skybox light is an ambient light emitted by a skybox.
 
- 
+ 
 
 ![media/SkyboxLightOverview.png](media/SkyboxLightOverview.png) 
 
@@ -17,7 +17,7 @@ In order to use a skybox light, an entity must have both:
 > 
 > If the Skybox Component is enabled, both the lighting and the skybox background are displayed, otherwise only the lighting is displayed    
 
- 
+ 
 
 The following images show the difference between ambient and skybox lighting and the impact of the skybox lighting on various materials:
 
@@ -34,7 +34,7 @@ Properties that defines a skybox light:
 
 ![media/SkyboxLightProperties.png](media/SkyboxLightProperties.png) 
 
- 
+ 
 
 | Property     | Description                                                                                                                                                                                    |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -49,11 +49,11 @@ Properties that defines a skybox light:
 | Culling Mask | Defines which entity groups are affected by this light. By default, all groups are affected.                                                                                                   |
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 

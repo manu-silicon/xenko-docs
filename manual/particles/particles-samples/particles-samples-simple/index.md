@@ -98,7 +98,7 @@ Let's have a look at the Smoke particle system.
 
 By now you should know how to use updaters, initializers and materials, so we will skip this explanation.
 
-This effect only plays once, raather than indefinitely like the other particle systems.
+This effect only plays once, rather than indefinitely like the other particle systems.
 
 ![media/particles-samples-simple-7.png](media/particles-samples-simple-7.png) 
 

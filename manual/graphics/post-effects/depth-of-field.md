@@ -14,13 +14,13 @@ Internally, the effect is achieved by creating several versions of the original 
 
 The more layers are used, the better the quality is, but at some performance cost.
 
- 
+ 
 
 ![media/depth-of-field-2.png](media/depth-of-field-2.png) 
 
 # Properties
 
- 
+ 
 
 | Property   | Description                                                                                                                                                            |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -48,11 +48,11 @@ The more layers are used, the better the quality is, but at some performance cos
 |            |                                                                                                                                                                        |
 |            |                                                                                                                                                                        |
 |            |                                                                                                                                                                        |
-|            |                                                                                                                                                                        |
+|            |                                                                                                                                                                        |
 | Auto Focus | When enabled, the DOF Areas are automatically updated so that the camera focuses on the object at the center of the screen.                                            |
 
 
- 
+ 
 
- 
+ 
 

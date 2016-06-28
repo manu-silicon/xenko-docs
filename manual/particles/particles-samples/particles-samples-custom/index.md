@@ -200,7 +200,7 @@ Refer to the @'SiliconStudio.Xenko.Particles.Modules.ParticleUpdater' for api re
         public AnimatedCurveEnum Curve; // Refer to the actual sample code for AnimatedCurveEnum
 
 		// In the constructor we have to specify all the fields we need for this updater.
-		// It calculates our newly created field by using the partile's lifetime so we need "RectangleXY" and "Life"
+		// It calculates our newly created field by using the particle's lifetime so we need "RectangleXY" and "Life"
         public CustomParticleUpdater()
         {
             // This is going to be our "input" field

@@ -9,7 +9,7 @@ This addresses the following topics:
 
 # <a name="Terms"> Contribution Terms 
 
-By submitting suggestions, corrections, or content to this repo you hereby agree to the following terms and conditions.
+By submitting suggestions, corrections, or content to this repository you hereby agree to the following terms and conditions.
 
 Any content submitted to these forums will be reviewed to check for accuracy, usability, 
 and direction for the Xenko project. Although all submissions will be considered fairly, 
@@ -77,11 +77,11 @@ to build only the manual in that case).
 Articles should be organized in folders. Media and code files should be stored in folders named _media_ and _code_
 and placed next to the article using them.
 
-For more details about the files struture, read the [Guidelines](GUIDELINES.md).
+For more details about the files structure, read the [Guidelines](GUIDELINES.md).
 
 # <a name="Guidelines"> Doc Guidelines 
 
-In order to create an homogeous documentation and provide the best experience to all Xenko users, 
+In order to create an homogeneous documentation and provide the best experience to all Xenko users, 
 we would like you to follow the following [Guidelines](GUIDELINES.md) when you write your articles.
 
 Thank you for you contribution!
